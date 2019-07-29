@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>body{font-size: 100px; font-family: monospace }</style>
+</head>
+<body>
+    <script>
+        function showShadow( length ){
+            for(var x = 1; x <= 10; x++){
+                if( x == 5 ){
+                    document.write( '|' )
+                }else if( x > 5 && x <= 5 + length ){
+                    document.write('\\')
+                }else{
+                    document.write('_')
+                }
+            }
+        }
+        showShadow(3);
+    </script>
+</body>
+</html>
