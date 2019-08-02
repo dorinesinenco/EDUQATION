@@ -1,0 +1,8 @@
+body{
+   animation: flash 5s infinite;
+}
+
+@keyframes flash{
+    from{ color: transparent; }
+    to{ color: white; }
+}
