@@ -2,12 +2,44 @@
 <html>
 <head>
     <title>User class Example</title>
+    <style>
+        .form{ border: 1px solid #999; padding: 20px;}
+        button,input{ padding: 20px; }
+        button.success{ background-color: green; color: white }
+        button.danger{ background-color: red; color: white }
+        button.warning{ background-color: orange; color: white }
+        button.disabled{ background-color: gray; color: black }
+        button.default{ background-color: white; color: black }
+    </style>
 </head>
 <body>
+
+    <form class="form">
+        <input type="text" placeholder="some dummy input">
+        <div id="actions">
+            <!-- insert buttons inside this element! -->
+        </div>
+    </form>
+
     <script>
 
-        class User {
-            // ???
+        class Button {
+            constructor( text, type, action ){
+                // ???
+            }
+
+            render( parrent_id ){
+                // ???
+                // hint: html representation of the button - <button class="???" onclick="???">???</button> 
+            }
+
+        }
+
+        function okAction(){
+            alert("You've accepted")
+        }
+        function cancelAction(){
+            alert("You've canceled")
         }
 
         //  ???
