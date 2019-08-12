@@ -13,3 +13,4 @@
 
 ---
 
+BONUS: Incercati sa adaugati prefixe vendor pentru unele proprietati astfel incat ele sa fie compatibile cu versiunile vechi ale "Chrome", "Safari" si "Firefox"
