@@ -1,0 +1,114 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    background-color: #333;
+}
+
+
+#carousel{
+ padding: 100px 0;
+}
+#carousel .slides{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}  
+#carousel .controls{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 30px;
+    padding: 30px;
+}  
+#carousel .controls a{
+    color: white;
+    margin: 0 100px;
+}
+#carousel .slides figure{
+    margin:  0;
+    position: relative;
+    box-shadow: 0 0 5px 3px #111;
+    background-image: linear-gradient(45deg, #999,#fff);
+}
+
+#carousel .slides figure::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg, transparent 60%, #ffF9 68%);
+}
+
+#carousel .slides figure img{
+    width: 100%;
+
+}
+#carousel .slides figure h2{
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+#carousel .slides figure:nth-child(1),
+#carousel .slides figure:nth-child(5){
+    width: 180px;
+    z-index: -2;
+    box-shadow: 0 0 3px 1px #111;
+}
+#carousel .slides figure:nth-child(2),
+#carousel .slides figure:nth-child(4){
+    width: 220px;
+    z-index: -1;
+    box-shadow: 0 0 4px 2px #111;
+}
+
+@media (max-width: 1210px){
+    #carousel .slides{
+        position: absolute;
+        
+        flex-direction: column;
+         top:0;
+        left:0;
+        width: auto;
+        height: auto;
+        bottom:0;
+        right:0;
+    }
+    #carousel .slides figure:nth-child(1),
+    #carousel .slides figure:nth-child(5){
+        height: 100px;
+        z-index: -2;
+        box-shadow: 0 0 3px 1px #111;
+        display: none;
+    }
+    #carousel .slides figure:nth-child(2),
+    #carousel .slides figure:nth-child(4){
+        width: 420px;
+        z-index: -1;
+        box-shadow: 0 0 4px 2px #111;
+    }
+    #carousel .slides figure h2{
+        display: none;
+    }
+    #carousel .controls{
+        top:0;
+        left:0;
+        width: auto;
+        height: auto;
+        bottom:0;
+        right:0;
+        position: absolute;
+        z-index: 1;
+        direction: column;
+        align-items: center;
+        justify-content:space-between;
+        font-size: 30px;
+        margin: 30px;
+
+    }  
+}

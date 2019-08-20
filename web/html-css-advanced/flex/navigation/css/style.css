@@ -1,0 +1,70 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+header{
+  background-image: linear-gradient(rgb(140, 140, 140),rgb(89, 89, 89) 3%,rgb(140, 140, 140) 49%,rgb(64, 64, 64) 97%, rgb(140, 140, 140));
+  padding: 1em 0;
+}
+header a{
+  color: white;
+  text-shadow: 1px 1px 2px rgb(13, 13, 13);
+}
+header .container{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+}
+header .brand a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header .brand small{
+  
+}
+header .brand img{
+ 
+}
+header .navbar{
+   display: flex;
+   width: 60%;
+   margin-left: auto;
+}
+header .navbar .nav-main{
+    display:flex;
+    justify-content: flex-end;
+  
+    align-items: center;
+    width: 100%;
+}
+header .navbar .nav-main li{
+     margin-left: 2%;
+}
+header .navbar .nav-main a::after{
+  
+}
+
+@media (max-width: 700px){
+    header .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    header .navbar{
+        flex-direction: column;
+        justify-content: center;
+        margin-right: auto;
+    }
+    header .navbar .nav-main{
+        justify-content: center;
+        flex-direction: column;
+    }
+}
