@@ -41,3 +41,15 @@ NOTA: Scopul acestui exercitiu este sa va obisnuiasca sa utilizati datele in Lar
 10. Cu ajutorul constructiei "blade" @foreach, afisati produsele cu tot cu poze si preturi sub forma de lista ordonata HTML.
 
 ---
+
+
+
+### 2. Utilizarea parametrilor URL si operarea cu filtrele
+* Toate rutele care urmeaza trebui sa afiseze doar denumire produsului si pretul acestuia cu unitatea de masura (curenta) in baza relatiei Product->price
+
+
+1. Creati o ruta publica "/catalog" care afiseaza paginat a cate 12 produsele si preturilor sortate conform datei de adaugare (cele mai proaspete la suprafata). Aceasta ruta trebui sa actioneze prin controlerul "CatalogController" aflat in spatiul public prin metoda "index()". Vizualizarea publica "products/catalog" va fi utilizata pentru afisarea rezultatelor. Rezultatele trebuiesc amplasate in pagina cu ajutorul Bootstrap 4 grid cate 3 coloane per rand. 
+2. Creati o ruta publica parametrizata "/catalog/price/{sort}" care primeste in parametrul "sort" una din doua variante "cheap", "expensive" si este realizata de acelasi controler prin aceiasi vizualizare prin metoda "indexPriceSort()". Aceasta metoda tre sa continue sa pagineze rezultatele a cate 12. Metoda tre sa sorteze produsele dupa pret.
+3. Creati o ruta publica parametrizata "/catalog/date/{sort}" care primeste in parametrul "sort" una din doua variante "fresh", "old" si este realizata de acelasi controler prin aceiasi vizualizare prin metoda "indexDateSort()". Aceasta metoda tre sa continue sa pagineze rezultatele a cate 12. Metoda tre sa sorteze produsele dupa data adaugarii.
+
+NOTA: Atentie cand utilizati sortari asupra valorilor accesibile prin relatii in laravel/Eloquent!
