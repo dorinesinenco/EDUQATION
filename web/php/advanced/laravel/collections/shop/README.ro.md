@@ -62,10 +62,10 @@ NOTA: Atentie cand utilizati sortari asupra valorilor accesibile prin relatii in
 1. Creati modelul CartItem (el reprezinta un item care va fi adaugat in cos) acesta tre sa contina id, timestamps si sa utilizeze optiunea "soft deletes". El tre sa mai contina un camp de tip intreg mic "amount" - numarul de produse de acest tip puse in cos. El tre sa contina o relatie cu un pret - "itemPrice". Tot acesta tre sa contina campul product_id si relatia "product" care indica ce produs reprezinta acest item. Si in cele din urma el tre sa mai contina cart_id si relatia "cart" care arata in ce cos a fost plasat acest CartItem.
     * Pentru clarificare ilustrez schematic cum ar trebui sa arate structura in urma adaugarii acestui model.
         1. Cart ------- totalPrice() ----> Price 
-        2. Cart ------- items()      ----> CartItem 
-           Cart <------ cart()       <---- CartItem ------ product()   -----> Product
-                                           CartItem <----- cartItems() <----- Product
-                                           CartItem ------ itemPrice() -----> Price
+        2. Cart ------- items()      ----> CartItem <br/>
+           Cart <------ cart()       <---- CartItem ------ product()   -----> Product<br/>
+                                           CartItem <----- cartItems() <----- Product<br/>
+                                           CartItem ------ itemPrice() -----> Price<br/>
 
         
 2. Creati o ruta numita /cart/add/{product_id} aceasta tre sa fie public accesibila si sa actioneze CartController@add. Deocamdata aceasta metoda tre sa adauge produsul ales dupa id, creand un nou CartItem() cu cantitatea 1 si legat de produsul ales, apoi plasat in cosul curent! Nu uitati sa scrieti logica de calcul astfel incat de fiece data se adauga un item cu un produs in cantitate de x1 in cos - costul total al cosului trebuie updatat!
