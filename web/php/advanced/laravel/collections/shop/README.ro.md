@@ -53,3 +53,21 @@ NOTA: Scopul acestui exercitiu este sa va obisnuiasca sa utilizati datele in Lar
 3. Creati o ruta publica parametrizata "/catalog/date/{sort}" care primeste in parametrul "sort" una din doua variante "fresh", "old" si este realizata de acelasi controler prin aceiasi vizualizare prin metoda "indexDateSort()". Aceasta metoda tre sa continue sa pagineze rezultatele a cate 12. Metoda tre sa sorteze produsele dupa data adaugarii.
 
 NOTA: Atentie cand utilizati sortari asupra valorilor accesibile prin relatii in laravel/Eloquent!
+
+
+
+### 3. Relatii polimorfe, controllere, parametrii URL
+* Pentru a lucra cu conditiile din acest capitol incercati sa faceti un singur cos in baza de date (el sa fie unicul) si faceti toate operatiunile de mai jos cu acest unic cos, presupunand ca asta este cosul clientului actual.
+
+1. Creati modelul CartItem (el reprezinta un item care va fi adaugat in cos) acesta tre sa contina id, timestamps si sa utilizeze optiunea "soft deletes". El tre sa mai contina un camp de tip intreg mic "amount" - numarul de produse de acest tip puse in cos. El tre sa contina o relatie cu un pret - "itemPrice". Tot acesta tre sa contina campul product_id si relatia "product" care indica ce produs reprezinta acest item. Si in cele din urma el tre sa mai contina cart_id si relatia "cart" care arata in ce cos a fost plasat acest CartItem.
+    * Pentru clarificare ilustrez schematic cum ar trebui sa arate structura in urma adaugarii acestui model.
+        1. Cart ------- totalPrice() ----> Price 
+        2. Cart ------- items()      ----> CartItem 
+           Cart <------ cart()       <---- CartItem ------ product()   -----> Product
+                                           CartItem <----- cartItems() <----- Product
+                                           CartItem ------ itemPrice() -----> Price
+
+        
+2. Creati o ruta numita /cart/add/{product_id} aceasta tre sa fie public accesibila si sa actioneze CartController@add. Deocamdata aceasta metoda tre sa adauge produsul ales dupa id, creand un nou CartItem() cu cantitatea 1 si legat de produsul ales, apoi plasat in cosul curent! Nu uitati sa scrieti logica de calcul astfel incat de fiece data se adauga un item cu un produs in cantitate de x1 in cos - costul total al cosului trebuie updatat!
+3. in AppServiceProvider - sa se redacteze logica astfel incat acesta sa ofere nu doar informatia despre costul total al cosului - dar si numarul de "CartItems" (itemuri) puse in cos.  
+
