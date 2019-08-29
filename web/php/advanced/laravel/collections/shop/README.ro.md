@@ -71,3 +71,16 @@ NOTA: Atentie cand utilizati sortari asupra valorilor accesibile prin relatii in
 2. Creati o ruta numita /cart/add/{product_id} aceasta tre sa fie public accesibila si sa actioneze CartController@add. Deocamdata aceasta metoda tre sa adauge produsul ales dupa id, creand un nou CartItem() cu cantitatea 1 si legat de produsul ales, apoi plasat in cosul curent! Nu uitati sa scrieti logica de calcul astfel incat de fiece data se adauga un item cu un produs in cantitate de x1 in cos - costul total al cosului trebuie updatat!
 3. in AppServiceProvider - sa se redacteze logica astfel incat acesta sa ofere nu doar informatia despre costul total al cosului - dar si numarul de "CartItems" (itemuri) puse in cos.  
 
+
+### 4. Relatii polimorfe, controller, parametrii URL. Generarea raspunsului cu "redirect". Utilizarea Bootstrap 4 in FE.
+  
+
+1. Cu ajutorul bootstrap 4 [dropdown](https://getbootstrap.com/docs/4.3/components/dropdowns/). Faceti in asa mod incat atunci cand se afiseaza cosul in macheta voastra el sa arate cam asa [rezultat](./result-shop-cart.png). Cine doreste poate sa execute aceasta cu REACT/Material-ui
+2. Linkul "View Cart" sa plece pe adresa "/cart/view" care reactioneaza prin controlerul "CartController@view" acesta sa afiseze mai detaliat toate produsele (cartItems) din cos in tabel (Bootstrap 4 or.. altele) cu urmatoarele coloane pe ecran:
+   * nr de ordine (1,2,3...)
+   * Titlu Produs
+   * Cantitate (la moment 1 peste tot) 
+   * Pret Item
+   * Actiuni (ultima coloana din tabel tre sa contina un link cu textul "Remove" care este indreptata pe adresa /cart/remove/{cart_item_id}, acesta va actiona CartController@remove, care obtine id-ul cartitemului, il sterge din cosul actual, apoi face redirect la pagina /cart/view ca sa vedem rezultatul) Pentru redirectionare in Laravel - cititi [aici](https://laravel.com/docs/5.8/responses#redirects) 
+   
+ 
