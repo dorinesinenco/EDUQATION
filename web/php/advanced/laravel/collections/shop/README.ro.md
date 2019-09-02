@@ -84,3 +84,16 @@ NOTA: Atentie cand utilizati sortari asupra valorilor accesibile prin relatii in
    * Actiuni (ultima coloana din tabel tre sa contina un link cu textul "Remove" care este indreptata pe adresa /cart/remove/{cart_item_id}, acesta va actiona CartController@remove, care obtine id-ul cartitemului, il sterge din cosul actual, apoi face redirect la pagina /cart/view ca sa vedem rezultatul) Pentru redirectionare in Laravel - cititi [aici](https://laravel.com/docs/5.8/responses#redirects) 
    
  
+
+### 5. Relatii intre modele. Modele inteligente.
+
+* In cazul proiectului realizat de voi, atunci cand se initiaza un nou cos pentru un client prin Cart::create(), ar fi bine simultan sa se initieze si un pret cu valoarea "0" legat prin totalPrice(), care eventual va fi legat de o valuta. De altfel cosul initiat de sinestatator nu are sens! Pentru a realiza aceasta logica urmati urmatorii pasi:
+
+1. Dati o privire aici pentru a intelege ce inseamna [evenimentele](https://laravel.com/docs/5.8/eloquent#events) modelului. De altfel numit "lifecycle events". Pe scurt, Eloquent va permite sa atasati functii cu logica proprie care vor reactiona la diverse "evenimente" care se intampla in viata unui model, atat in memorie cat si in baza de date.
+
+2. Creati un "observator" [executand](https://laravel.com/docs/5.8/eloquent#observers) care va va permite sa definiti anumite reactii la anumite evenimente. Observatorul sa se numeasca "CartObserver". Metoda care va intereseaza la moment este "created(Cart $cart)". Aceasta metoda va fi apelat doar DUPA ce cosul a fost salvat in baza de date. 
+
+3. In interiorul metodei observatorului care reactioneaza la crearea unui nou cos, Creati un nou pret Price::create([...]) si atasati-l de o valuta (Currency) si de cosul creat numai ce prin relatia totalPrice(). Astfel incat deja de fiece data veti crea un cos nou prin Cart::create() - modelul automat sa isi ataseze un pretz egal cu 0.
+
+4. Verificati logica scrisa pana acum printr-un test-controller.
+
