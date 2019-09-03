@@ -97,3 +97,16 @@ NOTA: Atentie cand utilizati sortari asupra valorilor accesibile prin relatii in
 
 4. Verificati logica scrisa pana acum printr-un test-controller.
 
+
+### 6. Utilizarea Middleware route si Controllere. Sesiunea
+
+* Ideea acestui punct este de a reactiona la adaugarea in cos a clientului in felul urmator: atat timp cat clientul nu doreste sa cumpere nimic, nu ii este acordat nici un cos, pentru a economisi resursele serverului. In momentul in care clientul face cumparatura, se verifica daca in sesiune exista un cos alocat acestuia, daca nu - se creaza un cos nou si apoi se adauga primul produs in el.
+
+1. Reveniti la ruta /cart/add/{product_id} si controller-ul respectiv. In metoda aceasta utilizati urmatorul algoritm:
+   1. Verificati daca in sesiune exista "cart_id", daca nu exista atunci -> Cart::create();
+   2. Adaugati in cos produsul ales dupa ID - product_id
+   3. Redirectionati "back()" la pagina de pe care a avut loc acest request.
+   * Pentru a nu va complica procesul, recomandarea este de a testa aceasta ruta deocamdata direct - punand in browser o cale de genul /cart/add/1 si afisand starea cosului cu ajutorul dd(), dump()
+2. Verificati daca se afiseaza fara erori starea cosului in bara de navigare. Atentie! in CartMiddleware, refaceti logica in asa mod inca el sa partajeze cu vizualizarile cosul - daca el exista in sesiune, dar daca cosul nu exista in sesiune, partajati valoarea "null". Respectiv, in logica de afisare a cosului - daca valoarea este "null" afisati doar textul - "cart empty" in caz contrar - numarul de itemi, si costul total.
+3. Atunci cand se afiseaza cosul cu itemi in el, linkul "vezi cosul" -> /cart/view tre sa treaca clientul pe o pagina unde se afiseaza cosul in detalii, cosul afisat va fi preluat din sesiune "cart_id"
+
