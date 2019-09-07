@@ -110,3 +110,13 @@ NOTA: Atentie cand utilizati sortari asupra valorilor accesibile prin relatii in
 2. Verificati daca se afiseaza fara erori starea cosului in bara de navigare. Atentie! in CartMiddleware, refaceti logica in asa mod inca el sa partajeze cu vizualizarile cosul - daca el exista in sesiune, dar daca cosul nu exista in sesiune, partajati valoarea "null". Respectiv, in logica de afisare a cosului - daca valoarea este "null" afisati doar textul - "cart empty" in caz contrar - numarul de itemi, si costul total.
 3. Atunci cand se afiseaza cosul cu itemi in el, linkul "vezi cosul" -> /cart/view tre sa treaca clientul pe o pagina unde se afiseaza cosul in detalii, cosul afisat va fi preluat din sesiune "cart_id"
 
+
+
+### 7. Formulare si templating.
+
+* Ideea acestei etape este de a prezenta clientului posibilitatea de a completa cosul - transferandu-l in comanda activa si de a trece la etapa achitarii.
+
+1. Creati 2 formulare (daca nu le aveti create deja) in views/clients. Primul sa se numeaasca "form-registration.blade.php" cealalta "form-authentication.blade.php". Deocamdata puteti adauga doar 2-3 campuri - cele mai de baza - nume, parole, email - verificati din modelele pe care le aveti la indemana.
+2. Cu ajutorul bootstrap 4 [tabs](https://www.w3schools.com/bootstrap/bootstrap_tabs_pills.asp) - componentei de taburi si directivei blade "@include" adaugati aceste doua formulare pe o pagina numita "views/carts/checkout.blade.php" astfel incat clientul sa se poata comuta usor de pe un formular pe altul.
+3. Creati o ruta /cart/checkout - CartController@checkout care sa afiseze pagina cu formularele.
+4. Creati un link care va duce la checkout de pe pagina cosului.
