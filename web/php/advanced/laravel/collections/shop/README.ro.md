@@ -120,3 +120,27 @@ NOTA: Atentie cand utilizati sortari asupra valorilor accesibile prin relatii in
 2. Cu ajutorul bootstrap 4 [tabs](https://www.w3schools.com/bootstrap/bootstrap_tabs_pills.asp) - componentei de taburi si directivei blade "@include" adaugati aceste doua formulare pe o pagina numita "views/carts/checkout.blade.php" astfel incat clientul sa se poata comuta usor de pe un formular pe altul.
 3. Creati o ruta /cart/checkout - CartController@checkout care sa afiseze pagina cu formularele.
 4. Creati un link care va duce la checkout de pe pagina cosului.
+
+
+### 8. Autenticare si Autorizare.
+
+* Ideea acestei etape este de a face procesul de autenticare mai inteligent si contextual. Ideea realizata de voi aici nu este cea mai potrivita pentru un shop, dar va va invata sa faceti un sistem cu decizii mai inteligente.
+
+1. La moment de fiece data se logheaza / autentifica un utilizator / client, el este redirectionat pe /client/profile. Pentru a schimba comportamentul LoginController, adaugati metoda redirectPath() in login controller. Aceasta metoda tre sa returneze o cale spre care trebuie redirectionat clientul.
+2. In metoda redirectPath(), adaugati urmatoarea logica prin if/else: daca in sesiune NU exista un cos, la momentul actual atunci redirectionati-l in continuare pe /client/profile. Daca exista un cos si acesta are cel putin un produs, atunci redirectionati-l pe /cart/payment.
+3. Ruta /cart/payment deocamdata nu face nimic, decat sa activeze CartController@payment care afiseaza o pagina unde deocamdata este doar titlul - "Select Payment Method".
+
+### 9. Autenticare si Autorizare.
+
+* Continuand ideea din p 8. Executati urmatoarele:
+
+1. Modelului User si migrarii adaugatii campul "role" de tip string cu maxim de 15 caractere. Acest camp va reprezenta rolul utilizatorului in sistem. Valoarea implicita este "client".
+2. Adaugati modelului User o metoda numita "makeAdmin()" fara parametri, aceasta metoda va fi apelata cam asa: sa zicem ca dorim ca utilizatorul cu id-ul "7" sa devina administrator:
+   1. User::find(7)->makeAdmin()->save();<br/>
+   se poate observa faptul ca exista un lantz de apel a metodelor makeAdmin() si save(). Ca aceasta sa fie posibil, in metoda makeAdmin() setati proprietate "role" in valoarea "admin" pentru obiectul curent si returnati-l din metoda ca imediat in continuare sa poata vi apelata metoda save(). MENTIUNE: daca metoda facuta de voi nu va returna obiectul curent atunci codul de mai sus va trebui executat in 3 linii:
+   $user = User::find(7);<br/>
+   $user->makeAdmin();<br/>
+   $user->save();<br/>
+3. Utilizand metoda makeAdmin(), alegeti oricare din utilizatorii inregistrati si faceti-l administrator prin "artisan tinker".
+4. Modificati metoda "redirectPath()" din punctul precedent, asa incat aceasta sa mai verifice o conditie, daca utilizatorul autenticat (curent) are proprietatea "role" cu valoarea "admin" atunci el trebuie redirectionat pe "/admin/dashboard" - care activeaza AdminController@dashboard, la moment aceasta poate sa afiseze doar inscriptia "admin panel!". Pentru a realiza acest pas, folositi fatada "Auth" din laravel. Aceasta fatada (clasa) contine metoda statica "user()" care va returneaza obiectul utilizatorului curent autenticat - sau null, daca suntenti in regim anonim!   
+
