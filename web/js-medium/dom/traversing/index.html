@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Traversing DOM</title>
+</head>
+
+<body onload="init()">
+
+    <nav id="navigation">
+        <a href="#" id="l-1">Link 1</a>
+        <a href="#" id="l-2">Link 2</a>
+        <a href="#" id="l-3">Link 3</a>
+        <a href="#" id="l-4">Link 4</a>
+        <a href="#" id="l-5">Link 5</a>
+    </nav>
+
+    <script>
+
+        function action(n){
+            alert(`l-${n}`)
+            alert( document.getElementById(`l-${n}`).parentElement.id );
+        }
+
+        function init(){
+            var links = document.body.firstElementChild.children;
+            for(var i=0; i<links.length; i++){
+                links[i].onclick = function(){ action(i+1) };
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
