@@ -1,0 +1,52 @@
+# Menirea acestui fisier textual este de a va pregati pentru a face  primii pasi de
+# coding in HTML.
+
+# VA RUGAM SA URMATI INSTRUCTIUNILE:
+    * Creati-va un folder/mapa pe calculatorul pe care lucrati
+      si numiti-o dupa sens (de ex "html-numele-dvs-anul" orice developer
+      trebuie sa se invete sa isi organizeze spatiul de lucru). 
+    * Lansati programul de redactare VsCode
+    * Din meniul de sus alegeti "File>Open Folder" si accesati mapa creata anterior.
+      (acest lucru se face cu scopul ca fiecare proiect/etapa asupra careia lucrati
+      sa fie concentrata intr-un spatiu delimitat de un dosar)   
+    * Daca totul a decurs bine ar trebui sa vedeti numele dosarului in partea stanga
+    * Copiati acest fisier textual (cel pe care il citit acum) in mapa voastra
+      si deschideti-l pentru a-l redacta din VsCode 
+    * Urmati instructiunile de mai jos
+
+!!! In timp ce raspundeti la intrebarile de mai jos, incercati sa pastrati (respectati) 
+!!! structura acestui fisier textual.
+
+!!! In Textul de mai jos (pastrand formatarea) inlocuiti
+!!! semnele de intrebare "???" cu propozitii scurte care raspund la intrebari
+
+1. HTTP este un protocol de comunicare (transportare de date) creat pentru a conecta browser-ele 
+   cu serverele care gazduiesc site-uri web. Raspundeti la intrebarea:
+      - Ce reprezinta un protocol de comunicare?
+        * ???
+
+2. Comunicarea dintre client (browser) si server (website) seamana cu un dialog. 
+   Raspundeti in termeni tehnici in limba Engleza
+      - Clientul trimite un ???
+      - Serverul trimite ca rezultat un ???
+
+3. Un website reprezinta un set de pagini legate intre ele si o aplicatie disponibila printr-o adresa unica 
+   sau o denumire de domeniu in spatiul public al internetului.
+    - Ce reprezinta un domeniu?
+      * ???
+
+4. Hosting este un set de servicii menit sa intretina (gazduiasca) paginili si site-urile Web. 
+    - Numiti 3 adrese ale website-urilor unor companii care ofera hosting:
+      * ???
+      * ???
+      * ???
+
+5. Limbajul HTML este cel ce ne permite sa structuram un document
+   accentul fiind pus pe cuvantul "Structura".
+    - ce reprezinta o structura din punctul dvs de vedere?
+      * ???
+      * ???
+      * ???
+
+!!! Dupa ce ati completat raspunsurile, Salvati acest fisier ("File>Save") sau CTRL+S 
+!!! si expediati-l pentru verificare in mesaj privat sau pe adresa dorin.e.art@gmail.com.
