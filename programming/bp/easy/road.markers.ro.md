@@ -57,7 +57,7 @@ road_end_km   = 120        # drumul se incheie cu kilometrul 120
   1. Sa se declare o variabila care reprezinta pozitia unui automobil pe drum (adica in km - la ce marker se afla automobilul) 
   2. Sa se citeasca valoarea acestei variabile de la tastatura prin functia **input()**
   3. Sa se calculeze ce lungime are drumul in km si sa se afiseze
-  4. Sa se calculeze ce cati km a parcurs automobilul de la inceputul drumului si sa se afiseze
-  5. Sa se calculeze ce cati km mai are de parcurs automobilul pana la  sfarsitul drumului si sa se afiseze
+  4. Sa se calculeze cati km a parcurs automobilul de la inceputul drumului si sa se afiseze
+  5. Sa se calculeze cati km mai are de parcurs automobilul pana la  sfarsitul drumului si sa se afiseze
   6. * BONUS - Daca se introduce viteza medie a automobilului intr-o variabila de la tastatura in km / h, sa se calculeze si sa se afiseze cate ore mai are de mers automobilul pana iese de pe acest drum
   7. * BONUS - Inainte de a calcula distantele si timpul legate de automobil, modelati deplasarea acestuia cu 3 markere mai spre sfarsitul drumului utilizand incrementarea
