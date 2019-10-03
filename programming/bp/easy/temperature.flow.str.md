@@ -1,7 +1,7 @@
 # Aplicarea Structurilor de control (flow control).
 
 
-Scrieti o aplicatie care citeste de la tastatura temperatura media in grade CELSIUS pentru ziua curenta
+Scrieti o aplicatie care citeste de la tastatura temperatura medie a aerului in grade CELSIUS pentru ziua curenta
 si afiseaza rezultatul in formatul urmator
 
 ```text
