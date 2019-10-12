@@ -11,7 +11,7 @@
 * Между параметрами URL вставляются "&"-ы а первый параметр всегда после адреса "endpoint" вставляется через "?"
 * Так что, например - если бы нам захотелось получить текущую погоду **api.openweathermap.org/data/2.5/weather** для Кишинева +**?city=Chisinau** в метрических единицах  +**&units=metric**  То нам бы пришлось отправить запрос (или считывать) с адреса "https://api.openweathermap.org/data/2.5/weather?city=Chisinau&units=metric"
 * Документация [тут](https://openweathermap.org/api)
-
+* Полученные данные распарсить в виде JSON при помощи https://mvnrepository.com/artifact/org.json/json
 ---
 Требуется выполнить следующее:
 1.  Создать класс "OpenWeatherProvider" вот стартер код:
