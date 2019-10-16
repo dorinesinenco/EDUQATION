@@ -48,7 +48,7 @@ public class BreadConsumer extends Thread{
 
 	@Override
 	public String toString() {
-		return "BreadConsumer (total: "+total_breads+") [name=" + name + "]";
+		return "           BreadConsumer (total: "+total_breads+") [name=" + name + "]";
 	}
 	
 	
