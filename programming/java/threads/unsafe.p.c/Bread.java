@@ -5,9 +5,11 @@ import java.util.Random;
 public class Bread {
 	private String name;
 	private Integer  weight;
-	public Bread(String name) {
+	private Integer  id;
+	public Bread(String name, Integer id) {
 		super();
 		this.name = name;
+		this.id = id;
 		this.weight = new Random().nextInt(50) + 400;
 	}
 	public String getName() {
@@ -25,6 +27,6 @@ public class Bread {
 	
 	@Override
 	public String toString() {
-		return "Bread [name=" + name + ", weight=" + weight + "g]";
+		return "Bread    ("+id+")    [name=" + name + ", weight=" + weight + "g]";
 	}
 }
