@@ -5,13 +5,13 @@ import java.util.Random;
 
 public class BreadProvider extends Thread{
 	private ArrayList<Bread> breads;  // storage can hold up to 10 breads
-	private Integer total_breads; // how many bread was produced
+	private Integer breads_sold; // how many bread were sold
 	
 	
 	public BreadProvider() {
 		super();
 		breads = new ArrayList<>();
-		this.total_breads = 0;
+		this.breads_sold = 0;
 	}
 
 
@@ -35,11 +35,11 @@ public class BreadProvider extends Thread{
 		Bread fresh_bread = new Bread("White");
 		System.out.println( this + " PRODUCING > " + fresh_bread );
 		breads.add( fresh_bread );
-		total_breads++;
 	}
 	
 	public Bread sellOneBread() {
 		if( breads.size() > 0 ) {
+			breads_sold++;
 			return breads.remove(0); // sell starting with the oldest
 		} else {
 			return null; // nothing to sell yet
@@ -50,7 +50,7 @@ public class BreadProvider extends Thread{
 
 	@Override
 	public String toString() {
-		return "BreadProvider (total: "+total_breads+" left: "+breads.size()+")";
+		return "BreadProvider (sold: "+breads_sold+" left: "+breads.size()+")";
 	}
 	
 }
