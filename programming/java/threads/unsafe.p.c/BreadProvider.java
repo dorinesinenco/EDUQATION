@@ -6,12 +6,13 @@ import java.util.Random;
 public class BreadProvider extends Thread{
 	private ArrayList<Bread> breads;  // storage can hold up to 10 breads
 	private Integer breads_sold; // how many bread were sold
-	
+	private Integer bread_id;
 	
 	public BreadProvider() {
 		super();
 		breads = new ArrayList<>();
 		this.breads_sold = 0;
+		this.bread_id = 0;
 	}
 
 
@@ -32,7 +33,7 @@ public class BreadProvider extends Thread{
 	}
 	
 	private void produceOneBread() {             // why is this private?
-		Bread fresh_bread = new Bread("White");
+		Bread fresh_bread = new Bread("White",++bread_id);
 		System.out.println( this + " PRODUCING > " + fresh_bread );
 		breads.add( fresh_bread );
 	}
