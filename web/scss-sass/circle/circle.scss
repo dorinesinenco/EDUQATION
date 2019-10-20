@@ -1,0 +1,21 @@
+$size: 200px;
+$color: green;
+
+body{
+    margin: 200px;
+}
+
+#circle{
+    &>div{
+        width: $size;
+        height: 0.01* $size;
+        background-color: $color;
+        position: absolute;
+        @for $n from 1 through 12 {
+            &:nth-child(#{$n}){
+                transform:rotate($n * 15deg);
+            }
+        }
+    }
+}
+
