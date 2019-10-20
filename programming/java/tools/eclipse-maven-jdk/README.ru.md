@@ -31,6 +31,11 @@
 ```  
 !!! после нажимаем правым на проект и "Maven > Update Project", проверяем "Project Explorer" указанная версия должна там быть
 ![add jdk](./7.png)
+Так же в эту секцию "properties" добавляем 
+```xml
+   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+```
+для установки правильной кодировки проекта
 
 9. Создаем в "src" новый package "main" и класс "Application", запускаем обычным F11/Run проверяем если IDE может запустить наше Java приложение (maven тут нипричем!) 
 ![add jdk](./8.png) -> Apply
