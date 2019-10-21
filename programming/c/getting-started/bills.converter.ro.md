@@ -11,7 +11,7 @@ int money_3 = 300;
 int money_accumulator = 0;
 
 // cheltuieli
-int expenses = 
+int expenses = 10;
 
 // acumulam suma
 money_accumulator = money_accumulator + money_1;
