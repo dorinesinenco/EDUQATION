@@ -56,10 +56,26 @@
    5. Colors:
       1. Color spaces
       2. Color profiles
-   6.  
+   6. Front end testing (web)
+      1. Optimization fitness (https://developers.google.com/speed/pagespeed/insights/)  
+      2. 
 
 
 
 6. Mission:
-   1. Transpose the clients desire into the users field of view
+   1. Understand the user needs
+   2. Be in foot with the trends
+   3. Think usable
+   4. Transpose the clients desire into the users field of view
 
+
+
+---
+TOOLS:
+1. Google Material Design (best open source design system ever)
+   1. https://material.io/collections/getting-started/
+
+
+ARTICLES & GUIDES:
+1. Google Design UX / UI guide (best design guide ever)
+   1. https://developers.google.com/web/fundamentals
