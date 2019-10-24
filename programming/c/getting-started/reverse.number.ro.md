@@ -1,4 +1,4 @@
-### Aritmecica numerelor si cifrelor.
+### Numere si caractere.
 
 > Daca am dori sa zicem sa schimbam cu locul valorile a 2 variabile avand la dispozitie o a 3-a (una temporara), am putea face asta aplicand principiul "triunghiului" in felul urmator:
 
