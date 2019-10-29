@@ -1,0 +1,12 @@
+body{
+    background-color: #333;
+    margin:0;
+}
+
+.widget{
+    width: 20vh;
+    height: 20vh;
+    margin: 40vh auto;
+
+    background-color: green;
+}
