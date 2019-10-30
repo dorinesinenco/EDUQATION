@@ -28,5 +28,7 @@
   2. Modifice programul astfel incat acesta sa fie capabil sa arate amplasarea unui tanker (cu lungimea de 5 unitati) pe fluviu, centrul caruia se va afla in pozitia indicata. Ca sa fie clar, de exemplu indicant pozitia 4 - rezultatul amplasarii pe harta a tankerului va fi
 
   ```~wwWww~~~~~~~~~~~~~~```
+  ```...^................```
+  ```123456..............```
 
   ATENTIE!!! tankerul nu poate sa iasa in afara fluviului nici macar cu o unitate!
