@@ -27,8 +27,8 @@
   1. Modifice programul astfel incat amplasarea barcii pe rau sa poata fi indicata de la tastatura si rezultatul sa fie vizibil DOAR daca pozitia indicata se cuprinde intre 1 si dimensiunea hartii, in caz contrar sa se afiseze "Wrong data!"
   2. Modifice programul astfel incat acesta sa fie capabil sa arate amplasarea unui tanker (cu lungimea de 5 unitati) pe fluviu, centrul caruia se va afla in pozitia indicata. Ca sa fie clar, de exemplu indicant pozitia 4 - rezultatul amplasarii pe harta a tankerului va fi
 
-  ```~wwWww~~~~~~~~~~~~~~```
-  ```...^................```
-  ```123456..............```
+  ```~wwWww~~~~~~~~~~~~~~```<br>
+  ```...^................```<br>
+  ```123456..............```<br>
 
   ATENTIE!!! tankerul nu poate sa iasa in afara fluviului nici macar cu o unitate!
