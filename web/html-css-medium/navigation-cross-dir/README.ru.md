@@ -3,7 +3,7 @@
 ---
 
 
-## На основе фрагмента «script» в [index](./index.html) выполнить следующие пункты:
+## На основе фрагмента [index](./index.html) выполнить следующие пункты:
 1. Добавить reset.css с CDN
 2. Добавить google шрифт "Manjari"
 3. Добавить fontawesome c CDN
