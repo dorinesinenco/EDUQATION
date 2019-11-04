@@ -29,9 +29,10 @@
         // 10 20 30 40 50 60 70
         //  > 10 20 30 40 50 60 
     }
-    data[i] = value
+    data[0] = value
         //  5 10 20 30 40 50 60 
     ```  
 
 
 * Se cere sa se scrie algoritmul care va deplasa cu o celula toate datele spre stanga (left shift) si va adauga o noua valoare din variabila "value" pe ultima pozitie.
+  
