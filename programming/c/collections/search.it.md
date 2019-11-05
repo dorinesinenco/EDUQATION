@@ -51,7 +51,7 @@
         "G" found at position 3
         ```        
   2. Daca in variabila "value" plasam valoarea cautata de exemplu "X" (care nu este in tabel), cum arata rezultatul?
-  3. Modificati programul ca rezultatul din punctul 1.4 sa apara DOAR daca litera a fost gasita in tabel, daca nu sa fie afisat:
+  3. Modificati programul ca rezultatul din punctul "i.d" sa apara DOAR daca litera a fost gasita in tabel, daca nu sa fie afisat:
     ```
     "X" not found
     ```
