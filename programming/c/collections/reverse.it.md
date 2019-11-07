@@ -1,6 +1,6 @@
 ## Tipul de date array. Tipuri compuse de date. Inversare (oglindire) iterativa
 
-> Deseori, avand la dispozitie o colectie de date, se cere sa se inverseze ordinea acestora.
+> Deseori, avand la dispozitie o colectie de date, se cere sa se inverseze ordinea acesteia.
 
 > Pentru realizarea acestui program amintiti-va principiul "triunghiului" de schimbare cu locul a doua valori (celule)
 
