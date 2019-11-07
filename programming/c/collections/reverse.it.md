@@ -27,7 +27,7 @@
         // ???
     }
     ```  
-    atunci  data[i], data[7-i] vor accesa la fiecare iteratie celulele simetrice fata de centru simultan, adica daca am construi tabelul de iteratii, aceste doua formule ar deplasa celulele accesate uite in asa mod:
+    atunci  word[i], word[7-i] vor accesa la fiecare iteratie celulele simetrice fata de centru simultan, adica daca am construi tabelul de iteratii, aceste doua formule ar deplasa celulele accesate uite in asa mod:
     ```
     index >> 0 1 2 3 4 5 6 7 
      i = 0   ^[i]          ^[7-i]
