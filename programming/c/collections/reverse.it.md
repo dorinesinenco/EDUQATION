@@ -14,7 +14,7 @@
 
     ```c
     for( int i = 0; i < 8; i++ ){
-        printf( "%c", data[i] );
+        printf( "%c", word[i] );
     }
     printf("\n\n");
     ```  
@@ -23,7 +23,7 @@
 
     ```c
     for( int i = 0; i < ???; i++ ){
-        // code with ... data[i], data[7-i] 
+        // code with ... word[i], word[7-i] 
         // ???
     }
     ```  
