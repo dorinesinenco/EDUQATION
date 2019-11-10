@@ -53,8 +53,7 @@
        3. valoarea "pass" trebuie sa contina cel putin 8 caractere
 
 BONUS!!! Sa se mai adauge o conditie pentru numele de utilizator "user" care sa se asigure ca se permite introducerea doar literelor din alfabetul latin mici - adica 'a'..'z'
-<details>
-    <summary>hint 1</summary>
-    daca utilizam functia **islower( user[0] )** din biblioteca **ctype.h** vom afla doar daca prima litera din numele de utilizator nu este majuscula!
-    
-</details>
+    <details>
+        <summary>hint 1</summary>
+        daca utilizam functia **islower( user[0] )** din biblioteca **ctype.h** vom afla doar daca prima litera din numele de utilizator nu este majuscula!
+    </details>
