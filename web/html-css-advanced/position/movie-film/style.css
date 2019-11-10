@@ -1,0 +1,73 @@
+body{
+    background-image: url(background.png);
+}
+#box{
+    background-color: rgb(15, 36, 64) ;
+    width: 40vh;
+    height: 40vh;
+    border-radius: 20vh;
+    position: absolute;
+    top: 30vh;
+    left: 33vw;
+    /* margin-left: -20vh; */
+    transform: translateX(-20vh);
+}
+#play-btn{
+    width: 30vh;
+    height: 30vh;
+    background-color: rgba(3, 88, 140, 0.8);
+    border-radius: 15vh;
+    position: absolute;
+    top: 5vh;
+    left: 5vh;
+    z-index: 1;
+    text-align: center;
+    line-height: 30vh;
+    font-size: calc(30vh/4);
+}
+#film{
+    /* background-color: rgb(46, 164, 219); */
+    height: 28vh;
+    width: calc(288vh + 9vw);
+    position: absolute;
+    /* top: 6vh; */
+    top: calc(100% - 34vh);
+    /* transform: translateX(-24vw); */
+    left: calc(20vh - 33vw);
+    animation: sliding 200s infinite;
+    /* animation-direction: alternate; */
+    /* animation-timing-function: linear ; */
+
+}
+#film img{
+    height: 24vh;
+    float: left;
+    /* margin-right: 2%; */
+    /* БАГ с отступами между картинками */
+    margin-top: 2vh;
+    /* margin-right: 1vw; */
+    border-right: 1vw solid rgba(10, 22, 38, 0.8);
+
+}
+/* #film .spacer{
+    float: left;
+    width: 20px;
+    height: 1px;
+}*/
+#film .holes{
+    height: 2vh;
+    /* background-color: orangered; */
+    position: absolute;
+    width: inherit;
+    background-image: radial-gradient(transparent 49%, rgba(10, 22, 38, 0.8) 50%);
+    background-size: 11px 15px;
+}
+#film .holes:last-child{
+    bottom: 0;
+}
+#play-btn i{
+    color: white;
+}
+/* #play-btn:hover+#film{
+    animation-duration: 10s;
+} */

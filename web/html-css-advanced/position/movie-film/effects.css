@@ -1,0 +1,5 @@
+@keyframes sliding{
+    0%{transform: translateX(0);}
+    50%{transform: translateX(calc(100vw - (288vh + 9vw)));}
+    100%{transform: translateX(0);}
+}
