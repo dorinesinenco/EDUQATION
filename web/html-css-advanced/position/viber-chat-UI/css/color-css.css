@@ -1,0 +1,20 @@
+/* Color Theme Swatches in Hex */
+.vchat-1-hex { color: #705CF2; }
+.vchat-2-hex { color: #3C3E73; }
+.vchat-3-hex { color: #212640; }
+.vchat-4-hex { color: #161F26; }
+.vchat-5-hex { color: #1D4013; }
+
+/* Color Theme Swatches in RGBA */
+.vchat-1-rgba { color: rgba(112, 92, 242, 1); }
+.vchat-2-rgba { color: rgba(60, 62, 115, 1); }
+.vchat-3-rgba { color: rgba(33, 38, 64, 1); }
+.vchat-4-rgba { color: rgba(22, 31, 38, 1); }
+.vchat-5-rgba { color: rgba(29, 64, 19, 1); }
+
+/* Color Theme Swatches in HSLA */
+.vchat-1-hsla { color: hsla(248, 85, 65, 1); }
+.vchat-2-hsla { color: hsla(237, 31, 34, 1); }
+.vchat-3-hsla { color: hsla(230, 31, 19, 1); }
+.vchat-4-hsla { color: hsla(206, 26, 11, 1); }
+.vchat-5-hsla { color: hsla(106, 54, 16, 1); }

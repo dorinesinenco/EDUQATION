@@ -1,0 +1,35 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #222;
+}
+.mockup_phone{
+    width: 490px;
+    height: 1068px;
+    padding: 7px 3px;
+    background-color: #888;
+    background-image: linear-gradient(#2C3032, #0E0E0A 5%, #0E0E0A 95%, #2C3032);
+    box-shadow: 0 0 15px 6px black;
+    border-radius: 35px;
+}
+.mockup_glass{
+    background-color: #111;
+    width: 480px;
+    height: 988px;
+    padding: 40px 5px;
+    background-image: linear-gradient(90deg, #747572, #090A0A 3%, #090A0A 97%, #747572);
+    border-radius: 40px;
+}
+.mockup_screen{
+    width: 480px;
+    height: 988px;
+    background-color: #555;
+    border-radius: 20px;
+}
+.center-hv{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
