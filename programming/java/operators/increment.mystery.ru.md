@@ -32,6 +32,14 @@
   System.out.println( "( " + x + " ) -> " + result );
   ```
 
+4.   
+  ```java
+  int x = 10;
+  int result = x+++x+++x;
+
+  System.out.println( "( " + x + " ) -> " + result );
+  ```
+
 
 
 
