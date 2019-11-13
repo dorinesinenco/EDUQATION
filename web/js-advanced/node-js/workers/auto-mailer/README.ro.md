@@ -30,3 +30,6 @@
         1.  Va trimite un email pe prima adresa din Array, si se va misca pe urmatoarea pozitie, apoi va astepta urmatorul timer
         2.  Cum vine urmatorul apel al timerului functia va trimite inca un email pe adresa de pe pozitia curenta, apoi se va misca iar pe pozitia urmatoare in Array - am putea numi acest algoritm - iteratie cu delay. Acest lucru este necesar pentru ca serviciile care transporteaza emailurile noastrea sa nu considere ca este un SPAM sau ATTACK, ca sa arate procesul cat mai natural - intervalul ar trebui setat cam la 100-300 de secunde, doar ca atat timp cat testam nu prea avem la dispozitie atata timp ;)
     4.  Daca veti citi documentatia / exemplul de pe prima pagina a nodemailer, veti vedea ca acesta e deja gata sa fie folosit cu async/await, promiseuri, si functia de expediere ".sendMail()" returneaza asincron informatia referitor la eroare/succes-ul transportarii, de aia la acest punct mai adaugati un PAS - scriptul tre sa astepte de fiece data rezultatul transportarii emailului si sa il afiseze in console.log()    
+
+
+HINT (pentru "iterarea intarziata" prin array - ati putea utiliza un ["generator function"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), ["generators"](http://learn.javascript.ru/generator))
