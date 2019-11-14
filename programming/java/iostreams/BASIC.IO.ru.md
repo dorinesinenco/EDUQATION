@@ -54,3 +54,23 @@
      > How much money do you have (USD)? 100
      > This is equivalent to 1800.00 MDL 
      ``` 
+
+
+---
+
+> Посмотрите еще на следующую диаграмму 
+
+```
+                                                                v <<  1     | << KEYBOARD <<< USER      
+                                                                v <<  0     | << KEYBOARD <<< USER      
+                                                                v <<  0     | << KEYBOARD <<< USER      
+                                                                v <<  ENTER | << KEYBOARD <<< USER      
+                                                                v
+                    x <--- ['1']['0']['0'] <--- | System.in | < x
+                    v
+          | Scanner.nextInt() |
+                    v    
+| APP | <--- (int) 100
+```
+
+> Тут приведена условная схема того как с клавиатуры значение **100** попадает в поток, а потом при помощи **Scanner** преобразуется в целое "int"
