@@ -1,6 +1,7 @@
 # Formulare in html
 
 * In baza imaginii de mai jos
+ 
   ![result](result.png)
 
   sa se macheteze formularul asemanator cu cel utilizat pentru a compune un mesaj nou in mesageria "gmail"
