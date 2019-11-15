@@ -2,10 +2,10 @@
 
 
 * Sa presupunem ca avem un sir de caractere care reprezinta "harta" amplasarii copacilor intr-o livada. Unde pentru convenienta vom considera ca:
-   ' ' - reprezinta un loc gol
-   'T' - un copac de NUCI 
-   'Y' - un copac de MERE 
-   'V' - un copac de PERE
+   * ' ' - reprezinta un loc gol
+   * 'T' - un copac de NUCI 
+   * 'Y' - un copac de MERE 
+   * 'V' - un copac de PERE
 
     aveti mai jos un exemplu de cod care declara harta unei livezi cu un anumit numar de copaci repartizate in ea
     ```c
