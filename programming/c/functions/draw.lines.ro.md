@@ -2,7 +2,7 @@
 
 > **Signatura** functiei sau **prototipul** acesteia, reprezinta informatia generala cunoscuta despre ea. Cel mai des prototipul reprezinta "formula" care indica tipul returnat, denumirea, tipurile si denumirile argumentilor.
 
-* Sa declare o functie care corespunde urmatorului prototip
+* Sa se declare o functie care corespunde urmatorului prototip
   ```c
   void draw_line( int length, char direction );
   ```
