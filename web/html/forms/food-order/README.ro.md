@@ -19,7 +19,7 @@ MENTIUNE: pentru a solutiona acest exemplu dati atentie atributelor: **align**,*
 ## Intregul proiect reprezinta 3 pagini legate intre ele.
 ### 1. Pagina principala.
 In baza scheletului [index](index.html) machetati un table cu formularul de comandare a unui menu asa incat rezultatul sa arate cat mai aproape de [result-index](result-index.png). Atentie la urmatoarele detalii:
-    * pictograma in tab-ul ferestrei ( tag-ul ```<link/>``` in **head** )
+    * pictograma in tab-ul ferestrei ( tag-ul ```<link rel="icon" href="URL"/>``` in **head** )
     * in titlu principal sunt simboluri speciale Braille
     * in tabelul principal, formularul este introdus printr-un alt tabel
     * in campurile de introducere este un text sugestiv de culoare gri
