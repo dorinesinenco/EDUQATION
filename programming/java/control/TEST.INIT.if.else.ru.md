@@ -1,8 +1,6 @@
 * Дан код
 
 ```java
-import java.util.Scanner;
-
 public class TestInitApp {
 
     public static void main(String[] args) {
