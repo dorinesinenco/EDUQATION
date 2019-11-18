@@ -28,7 +28,7 @@
             em.getTransaction().begin();
 
             em
-              .createNativeQuery("Create table Student(id INTEGER PRIMARY KEY AUTOINCREMENT, fullName VARCHAR(30));")
+              .createNativeQuery("Create table Student(id INTEGER PRIMARY KEY, fullName VARCHAR(30));")
               .executeUpdate();
 
             em.getTransaction().commit();
