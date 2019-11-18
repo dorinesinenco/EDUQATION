@@ -7,8 +7,8 @@
   2. Sa incrementeze valoarea cu 10
   3. Sa decrementeze valoarea cu 10
      
- aceste 3 actiuni sunt afisate in meniul principal ( in **main()** ).
-* Variabila **action** o vom utiliza pentru a scana "aciunea" dorita a fi aplicata de catre utilizator
+  aceste 3 actiuni sunt afisate in meniul principal ( in **main()** ).
+* Variabila **action** o vom utiliza pentru a scana "actiunea" dorita a fi aplicata de catre utilizator
 * Datorita acestui rand de cod ``` action = scanf("%d", &action); ``` de la tastatura se introduce numarul actiunii care trebuie executata.
 * Mai jos, o constructie de tip **switch()/case** alege ce functie sa apeleze in dependenta de valoarea introdusa  
 * Se cere sa:
