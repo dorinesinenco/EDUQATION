@@ -12,7 +12,7 @@
 * Datorita acestui rand de cod ``` action = scanf("%d", &action); ``` de la tastatura se introduce numarul actiunii care trebuie executata.
 * Mai jos, o constructie de tip **switch()/case** alege ce functie sa apeleze in dependenta de valoarea introdusa  
 * Se cere sa:
-  * Complectati codul din cele 3 functii, astfel incat utilizatorul sa poata executa cele 3 actiuni de baza asupra lui value! 
+  * Complectati codul din cele 3 functii, astfel incat utilizatorul sa poata executa cele 3 actiuni de baza asupra lui **value**! 
 ```c
 #include <stdio.h>
 
