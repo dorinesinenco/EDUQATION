@@ -1,0 +1,132 @@
+/* GENERAL STYLES */
+
+body{
+     background-color: #334;
+}
+
+.center{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/* CAROUSEL STYLES */
+
+#carousel{
+    width: 960px;
+    height: 480px;
+    background-color: inherit;
+}
+
+
+/* CAROUSEL IMAGES STYLES */
+
+#carousel img{
+    position: absolute;
+    box-shadow: 0 2px 5px 0px #112;
+}
+
+#carousel picture:first-child  img{
+    left: -300px;
+    transform: scale(0.8);
+    opacity:  /* ??? */;
+}
+
+#carousel picture:nth-child(2) img{
+    z-index: 1;
+}
+    
+#carousel picture:last-child img{
+    right: -300px;
+    transform: scale(0.8);
+    opacity: /* ??? */;
+}
+
+
+/* CAROUSEL CONTROLS STYLES */
+
+#carousel .controls a{
+    text-decoration: none;
+    color: rgb(211, 208, 39);
+    opacity:  /* ??? */;
+    padding: 0;
+}
+
+#carousel .controls a:hover{
+    opacity: /* ??? */;
+}
+
+#carousel .controls a i{
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 2px 5px 0px #112;
+    border-radius: 100%;
+}
+
+#carousel .controls{
+    position: absolute;
+    top: 213px;
+    font-size: 55px;
+    width: inherit;
+}
+
+
+/* CAROUSEL INDICATORS STYLES */
+
+#carousel .indicators{
+    position: absolute;
+    top: 460px;
+    font-size: 15px;
+    width: inherit;
+    text-align: center;
+    z-index: 2;
+}
+
+#carousel .indicators a{
+    text-decoration: none;
+    color: rgb(211, 208, 39);
+    padding: 0;
+}
+
+#carousel .controls a:first-child{
+    position: absolute;
+    left: 6px;
+}
+
+#carousel .controls a:last-child{
+    position: absolute;
+    left: 900px;
+}
+
+
+/* CAROUSEL ADAPTIVE STYLES */
+
+@media screen and (max-width: 1000px){
+    #carousel{
+
+    }
+
+    #carousel picture:first-child  img{
+
+    }
+
+    #carousel picture:nth-child(2) img{
+
+    }
+        
+    #carousel picture:last-child img{
+
+    }
+
+    #carousel .controls{
+
+    }
+
+    #carousel .indicators{
+
+    }
+}
