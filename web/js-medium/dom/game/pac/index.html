@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        background-color: #333;
+    }
+    #map{
+        width: 500px;
+        height: 500px;
+        border: 10px solid black;
+        position: relative;
+    }
+    .pac{
+        height: 48px;
+        width: 48px;
+        background-image: url(Cute-Ball-Games-icon.png);
+        border: 1px dotted black;
+        position: absolute;
+    }
+    .coin{
+        height: 48px;
+        width: 48px;
+        background-image: url(coin-us-dollar-icon.png);
+        border: 1px dotted black;
+    }
+    .tnt{
+        height: 48px;
+        width: 48px;
+        background-image: url(Tnt-icon.png);
+        border: 1px dotted black; 
+        position: absolute;
+    }
+
+
+    </style>
+</head>
+<body onkeydown="move()">
+
+    <div id="map">
+        <!-- <div class="pac"></div>
+        <div class="coin"></div>
+        <div class="tnt"></div> -->
+    </div>
+    <button onclick="moveUp()">Up</button><br>
+    <button onclick="moveLeft()">LEFT</button>
+    <button onclick="moveRight()">RIGHT</button><br>
+    <button onclick="moveDown()">Down</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
