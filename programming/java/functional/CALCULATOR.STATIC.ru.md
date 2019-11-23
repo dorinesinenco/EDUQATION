@@ -82,7 +82,7 @@
 
 * добавляем метод сложения двух чисел, принимает два целых, возвращает один целый результат
     ```java
-    static void add(int a, int b) {
+    static int add(int a, int b) {
         int r = a + b;
         return r;
     }
