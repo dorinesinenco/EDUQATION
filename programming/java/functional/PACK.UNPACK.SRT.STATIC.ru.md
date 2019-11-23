@@ -54,9 +54,9 @@
       int a = in.nextInt();
       int b = in.nextInt();
       int c = in.nextInt();
-      System.out.println( "a = ", a );
-      System.out.println( "b = ", b );
-      System.out.println( "c = ", c );
+      System.out.println( "a = " + a );
+      System.out.println( "b = " + b );
+      System.out.println( "c = " + c );
   }
   ``` 
   данный метод ничего не возвращает, принимает строку (String) и ОБРАТИТЕ ВНИМАНИЕ! инициализирует Scanner() на этот раз используя **data** - текст в качестве источника для чтения, считывает через пробел 3 целых числа и выводит их, вызвав 
