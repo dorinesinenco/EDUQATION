@@ -10,6 +10,12 @@
 * В
 
 
+```
+
+| TAP | ---> "volume temperature" ---> | HEATER | ---> "volume temperature" ---> | 
+
+```
+
 * Рассмотрим пример простого класса с методом "main()"
   
     ```java
