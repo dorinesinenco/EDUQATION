@@ -3,7 +3,7 @@
 * Предположим есть такой файл "DataWrapApp.java"
   ```java
     // main class
-    public class DataFlowApp {
+    public class DataWrapApp {
         public static void main(String[] args) {
 
         }
