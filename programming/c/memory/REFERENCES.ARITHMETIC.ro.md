@@ -46,8 +46,8 @@
 
 * Daca am dori sa pasim pornint de la un bloc de memorie de tip "int" cu pasi mai mici (sa zicem cu cate 2 bytes) atunci inainte sa facem pasirea, adresa obtinuta de tip ```int*``` trebuie convertita intr-o adresa de tip ```short*```, adica:
    ```c
-   printf("the short value 2 bytes before a is: %h", *((short*)&a - 1) );
-   printf("the short value 2 bytes after  a is: %h", *((short*)&a + 1) );
+   printf("the short value 2 bytes before a is: %hd", *((short*)&a - 1) );
+   printf("the short value 2 bytes after  a is: %hd", *((short*)&a + 1) );
    ```   
    in acest caz se va schimba NU doar pasul, ci si cum va fi citita valoarea - ca ```short```,
    prin urmare, daca intalniti o expresie de tipul ```(type*)address``` - interpretati-o ca o schimbare (conversie de tip) a adresei.
