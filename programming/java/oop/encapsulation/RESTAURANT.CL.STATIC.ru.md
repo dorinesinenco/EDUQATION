@@ -63,7 +63,7 @@
     SPECIAL MENU  x 10 portions(-20%) 2400.00 MDL
 
     ########### Vegan Pure Restaurant ###########
-    -- UpTown Str 77/B, Maxicity 
+    -- UpTown Str 77/B, Maxicity               --
     MENU          x 1  portion          50.00 MDL
     MENU          x 5  portions(-5%)   238.50 MDL
     SPECIAL MENU  x 1  portion         200.00 MDL
