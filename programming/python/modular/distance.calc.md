@@ -25,7 +25,7 @@
 
 * app.py
   va importa modulul creat de voi si va utiliza o constructie if/else impreuna cu rezultatul functiei create de voi pentru a da raspuns la intrebarea:
-    - care din urmatoarele 3 puncte este cele mai aproape unul de altul:
+    - care din urmatoarele 3 puncte sunt cele mai aproape unul de altul:
        * A (x=10,y=20)      
        * B (x=20,y=30)      
        * C (x=30,y=40)      
