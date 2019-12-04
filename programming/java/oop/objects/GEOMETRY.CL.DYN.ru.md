@@ -50,13 +50,13 @@ GeometricObjects
   2. Добавить метод **printCoords()** который выводит в **out** координаты линии в таком формате
     
      ```[10:20]----->[30:40]``` 
-     это при том что startX = 10, startY = 20, ....
-  3. Добавить метод **int length()** который возвращает длину линии по формуле [Euclid](http://rosalind.info/glossary/euclidean-distance/).
-     * ВНИМАНИЕ -  Чтобы можно было вычислить такую формулу, вам необходима будет математическая "библиотека" Java - простыми словами класс с названием [**Math**](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html) который содержит статические методы необходимые для вашего вычисления!    
+     это при том что startX = 10, startY = 20, endX = 30, endY = 40 
+  3. Добавить метод **int length()** который возвращает длину линии по формуле [Euclid](http://rosalind.info/glossary/euclidean-distance/) - расстояние между двумя точками.
+     * ВНИМАНИЕ -  Чтобы можно было вычислить такую формулу, вам необходима будет математическая "библиотека" Java - простыми словами класс с названием [**Math**](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html), который содержит статические методы необходимые для ваших расчетов!    
 
 
   4. Проверить логику вашего класса  **Line** в **main()**
-     1. TestA
+     1. TestA - создаем объект короткой линии в горизонтальном положении
           ```java
           Line short_horizontal_line = new Line( 100,0, 200,0 );
                 short_horizontal_line.printCoords();
@@ -67,7 +67,7 @@ GeometricObjects
           [100:0]----->[200:0]
           100
           ```
-     3. TestB
+     3. TestB - создаем объект длинной линии расположенная под углом
         
           ```java
           Line long_diagonal_line = new Line( 100,100, 500,500 );
