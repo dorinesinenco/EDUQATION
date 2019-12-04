@@ -20,7 +20,7 @@ t.setpos(0,0)
 # robot walking
 t.color("black")
 for steps in range(1,20,1): 
-	# ???
+  # ???
   t.circle(5)
   t.forward(100)
   
