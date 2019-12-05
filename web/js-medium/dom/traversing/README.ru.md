@@ -1,4 +1,4 @@
-* Научится лазить по DOM один из важных моментов FE. *
+* Научиться перемещаться по DOM - это один из важных моментов FE. *
 
 | *основной обьект DOM: **document***
 | *навигация по DOM: **element.parentElement**, **element.previousElementSibling**, **element.nextElementSibling**, **element.firstElementChild**, **element.lastElementChild**, **element.children***

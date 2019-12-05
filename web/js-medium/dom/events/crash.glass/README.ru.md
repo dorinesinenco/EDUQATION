@@ -1,4 +1,4 @@
-* Научится взаимодействовать с структурой и событиями DOM один из важных моментов FE. *
+* Научиться взаимодействовать со структурой и событиями DOM - это один из важных моментов FE. *
 
 | *основной обьект DOM: **document***
 | *навигация по DOM: **element.parentElement**, **element.previousElementSibling**, **element.nextElementSibling**, **element.firstElementChild**, **element.lastElementChild**, **element.children***
