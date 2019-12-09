@@ -13,7 +13,7 @@ PhoneInheritanceHistory
  - src/
    - main(package)
      - Application(Class + static main())
-   - comm(package)
+   - collections(package)
      - SimpleQueue(Class)
 ```
 
