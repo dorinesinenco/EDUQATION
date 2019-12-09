@@ -14,7 +14,7 @@ PhoneInheritanceHistory
    - main(package)
      - Application(Class + static main())
    - collections(package)
-     - SimpleQueue(Class)
+     - SimplePositiveQueue(Class)
 ```
 
 
