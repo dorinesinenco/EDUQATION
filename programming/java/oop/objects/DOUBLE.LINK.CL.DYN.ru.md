@@ -4,11 +4,11 @@
 
 ---
 
-Нам необходимо создать приложение благодаря которому люди начнут "дружить". Для этого создайте проект **DoubleRelatedObjects**
+Нам необходимо создать приложение благодаря которому люди начнут "дружить". Для этого создайте проект **RelatedObjects**
 с следующей структурой:
 
 ```
-DoubleRelatedObjects
+RelatedObjects
  - src/
    - main(package)
      - Application(Class + static main())
