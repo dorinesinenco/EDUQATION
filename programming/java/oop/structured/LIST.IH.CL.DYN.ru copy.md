@@ -60,8 +60,12 @@ CustomListExample
       // methods
       public void add( int value ) {
         Box current = first;
-        for(int i = 0; i < length; i++) {
-          current = current.next; 
+        if( length == 0 ) {
+           first = new Box( value );
+        } else {
+          for(int i = 0; i < length - 1; i++) {
+            current = current.next; 
+          }
         }
         current.next = new Box( value );
         length++;
@@ -70,7 +74,6 @@ CustomListExample
     }
 
   ```  
-
 
 
 * До того как дополнить код классов, посмотрите внимательно на то как реализован:
