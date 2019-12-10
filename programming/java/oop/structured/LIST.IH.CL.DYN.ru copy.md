@@ -66,8 +66,8 @@ CustomListExample
           for(int i = 0; i < length - 1; i++) {
             current = current.next; 
           }
+          current.next = new Box( value );
         }
-        current.next = new Box( value );
         length++;
       }
     
