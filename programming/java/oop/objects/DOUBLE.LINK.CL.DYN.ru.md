@@ -48,7 +48,7 @@ RelatedObjects
 ```java
     public class BasicTest{
 
-        public static boolean runCase(){
+        public static int runCase(){
 
             int percentage = 0;    
 
