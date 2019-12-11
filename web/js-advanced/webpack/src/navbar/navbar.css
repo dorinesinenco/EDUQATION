@@ -1,0 +1,8 @@
+.navbar{
+    color: white;
+    background-color: #333;
+    padding: 10px;
+}
+.navbar a{
+    color: inherit;
+}
