@@ -9,7 +9,7 @@
 
 
 
-* Ca sa realizati aceasta clonati structura acestui folder si urmati pasii:
+* Ca sa realizati aceasta clonati structura [acestui folder](./) si urmati pasii:
  
 1. INSTALAREA.  Instalati webpack-ul si urmatoarele extensii pentru webpack: 
      1.  html-loader
