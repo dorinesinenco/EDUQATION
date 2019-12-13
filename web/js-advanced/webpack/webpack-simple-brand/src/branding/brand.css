@@ -1,0 +1,21 @@
+.navbar{
+    color: white;
+    background-color: #333;
+    padding: 10px;
+}
+.navbar a{
+    color: inherit;
+    display: inline-block;
+}
+.navbar .logo svg{
+    width: 30px;
+}
+
+.rot{
+    animation: rot 1s;
+}
+
+@keyframes rot {
+    from{ transform: rotate(0deg);}
+    to{ transform: rotate(calc(3*360deg));}
+}
