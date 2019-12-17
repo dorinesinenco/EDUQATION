@@ -10,7 +10,7 @@
   * setw( int ) - seteaza "latimea" rezutatului in caractere de ex ```cout << setw(20) << "Hi";``` 
   * setprecision( int ) - seteaza numarul de pozitii dupa virgula pentru tipul de date cu virgula flotanta
   * endl - afiseaza caracterul de trecere din rand nou
-  * left, right - afiseaza caracterele de aliniere pe stanga - dreapta 
+  * left, right - afiseaza caracterele de aliniere pe stanga - dreapta - de ex ```cout << setw(20) << right << "Hi";```
 
 
 ---
