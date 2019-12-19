@@ -2,7 +2,7 @@
 
 [Partea 1]
 
-* Sa presupunem ca sub forma de o structura-dictionar, in Python ni se ofera scheta unui dulap de birou cu polite si sectiuni
+* Sa presupunem ca sub forma de o structura-dictionar, in Python ni se ofera schita unui dulap de birou cu polite si sectiuni
 
   ```
   ##############################
