@@ -4,6 +4,12 @@
 
 ### Шестая ЧАСТЬ
 
+материалы:
+ - [1](https://www.codeflow.site/ru/article/java__java-jmh-benchmark-tutorial)
+ - [2](https://putridparrot.com/blog/benchmarking-my-java-code-using-junitbenchmarks/)
+ - [3](https://www.baeldung.com/java-microbenchmark-harness)
+ - [4](https://www.youtube.com/watch?v=m3Xf1ra2Ekg)
+
 * Необходимо создать "stress test" или как еще часто говорят "performance test" который проверит скорость и стабильность базы данных в двух реализациях: Single Table и Join Table inheritance. Что должен показать тест:
   - Скорость базовых CRUD операций в секунду
   - Который из вариантов наследования лучше
