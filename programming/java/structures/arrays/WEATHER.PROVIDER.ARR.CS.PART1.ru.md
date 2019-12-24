@@ -16,7 +16,7 @@
 
       private static double generateTemperature() {
           Random rd = new Random(); 
-          double temperature = 100 * ( rd.nextDouble() - 1.5 );
+          double temperature = 300 * ( rd.nextDouble() - 0.5 );
           return temperature;
       }
 
