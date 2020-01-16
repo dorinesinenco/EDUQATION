@@ -1,8 +1,14 @@
 ## Clase si obiecte. Notiuni de baza
 
 > Clasa poate fi privita pe de o parte ca o "fabrica" care permite crearea mai multor obiecte de acelasi tip, de pe alta parte ca o "schema" care serveste drept proiect in baza caruia sunt create obiectele.
+
+
 > Constructorul unei clase este metoda (functia) care participa la crearea unui obiect si permite initierea valorilor acestuia
+
+
 > Proprietatile unui obiect sunt variabilile care se afla in interiorul acestuia
+
+---
 
 * Sa presupunem ca avem urmatoarea clasa (clasa unei cutii)
   ```cpp
