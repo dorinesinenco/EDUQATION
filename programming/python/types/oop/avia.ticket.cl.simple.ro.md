@@ -40,4 +40,4 @@
 BONUS:
 
 * Ce rol joaca **self** in atunci cand lucram cu obiectele si clasele ?
-* de ce metoda **__init__()** are o denumire atat de caraghioasa ?
+* de ce metoda ```__init__()``` are o denumire atat de caraghioasa ?
