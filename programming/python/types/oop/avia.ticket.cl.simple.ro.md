@@ -16,7 +16,7 @@
         
 
         # method
-        def printInfo():
+        def printInfo(self):
           # ??? 
           
   
