@@ -15,6 +15,8 @@ public class StudentsALAPP{
             System.out.println( s );
         }
 
+        ArrayList<Student> students = new ArrayList<Student>();
+
        // ???
     }
 
