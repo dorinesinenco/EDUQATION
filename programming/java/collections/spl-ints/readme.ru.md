@@ -8,8 +8,8 @@
   // 2. ???
 
   for( int d: dates ) {          // << ??? 3.
-      System.out.println( d );
       // 4. ???
+      System.out.println( d );
   }
   
   ArrayList young_dates = new ArrayList<Integer>();
