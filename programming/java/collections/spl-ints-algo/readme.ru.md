@@ -9,7 +9,7 @@
 
   for( double t: temps ) {          // << ??? 3.
       // 4. ???
-      System.out.println( d );
+      System.out.println( t );
       // 4. ???
   }
   
