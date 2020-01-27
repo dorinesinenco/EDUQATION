@@ -12,7 +12,7 @@
     3. Ce efect are ```margin-top``` ? ce s-ar schimba in caz de valoare negativa ?
     4. Ce dimensiune (cu tot cu border) au patratele din interiorul containerul ```section```?
   * Continuati codul in CSS incepand cu ```/* ??? */``` utilizand selectorul descendent si proprietatea ```margin``` astfel incat sa obtineti cele 5 epizoade in felul urmator
-    [result-1](result-1.png)    
+    ![result-1](./result-1.png)    
 
   * Dupa ce ati obtinut rezultatul raspundeti la intrebarea:
     * De ce ```cactusul``` se deplaseaza odata cu ```mario```
