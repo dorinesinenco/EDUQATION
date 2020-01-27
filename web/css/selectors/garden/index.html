@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mario in action. CSS Selectors!</title>
+    <style>
+        section{
+            width: 250px;
+            height: 100px;
+            border: 1px solid #333;
+        }
+        section .sun,
+        section .corn, 
+        section .potato, 
+        section .carrot, 
+        section .rain { 
+            width: 48px;
+            height: 48px;
+            float:left;
+            border:1px solid darkgreen;
+        }
+        section .sun{
+            background-image: url(./sun.png);
+        }
+        section .corn{
+            background-image: url(./corn.png);
+        }
+        section .potato{
+            background-image: url(./potato.png);
+        }
+        section .carrot{
+            background-image: url(./carrot.png);
+        }
+        section .rain{
+            background-image: url(./rain.png);
+        }
+        
+        section .corn, 
+        section .potato, 
+        section .carrot{
+            margin-top: 50px;
+            transform: scale(0.4);
+        }
+        /* ??? */
+    </style>
+</head>
+<body>
+   <main>
+       <h1>Weekly Weather in the garden :)</h1>
+       <h2>day-1</h2>
+        <section id="day-1">
+            <div class="sun"></div>
+            <div class="corn"></div>
+            <div class="potato"></div>
+            <div class="carrot"></div>
+        </section>
+
+        <h2>day-2</h2>
+        <section id="day-2">
+            <div class="corn"></div>
+            <div class="potato"></div>
+            <div class="carrot"></div>
+            <div class="rain"></div>
+        </section>
+
+        <h2>day-3</h2>
+        <section id="day-3">
+            <div class="sun"></div>
+            <div class="corn"></div>
+            <div class="potato"></div>
+            <div class="carrot"></div>
+        </section>
+
+        <h2>day-4</h2>
+        <section id="day-4">
+            <div class="corn"></div>
+            <div class="potato"></div>
+            <div class="carrot"></div>
+            <div class="rain"></div>            
+        </section>
+
+        <h2>day-5</h2>
+        <section id="day-5">
+            <div class="sun"></div>
+            <div class="corn"></div>
+            <div class="potato"></div>
+            <div class="carrot"></div>
+        </section>  
+
+        <h2>day-6</h2>
+        <section id="day-6">
+            <div class="corn"></div>
+            <div class="potato"></div>
+            <div class="carrot"></div>
+            <div class="rain"></div>            
+        </section>  
+
+        <h2>day-7</h2>
+        <section id="day-7">
+            <div class="sun"></div>
+            <div class="corn"></div>
+            <div class="potato"></div>
+            <div class="carrot"></div>
+        </section>  
+    </main>
+</body>
+</html>
