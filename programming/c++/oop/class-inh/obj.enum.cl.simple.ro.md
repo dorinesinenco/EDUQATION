@@ -18,7 +18,7 @@
   
   Exista insa situatii in care e nevoie sa se creeze un "namespace" pentru enumerare pentru a exclude conflictele cu alte enumerar. In asa caz exista mai multe solutii, una dintre cele mai practice fiind:
    sa se amplaseze enumerarea intr-un namespace
-      ```c++
+    ```c++
       namespace example {
         enum
         {
