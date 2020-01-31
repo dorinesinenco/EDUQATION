@@ -7,7 +7,8 @@
 * Se cere sa:
   * In comentarii CSS raspundeti la intrebarile:
     1. Ce inseamna selectorul ```.ball.onField.left { ... } ``` si prin ce difera de ```.ball { ... }```? 
-    2. Completati codul utilizand ```float``` si ```margin``` pentru alinierea pe orizontala a mingii!
-    3. Completati codul CSS ca sa obtineri urmatorul rezultat 
+    2. Ce stiluri e mai corect sa fie scrie in  ```.ball { ... }``` si care merita scrise in celelalti selectori care afecteaza mingea?
+  * Completati codul utilizand ```float``` si ```margin``` pentru alinierea pe orizontala a mingii!
+  * Completati codul CSS ca sa obtineri urmatorul rezultat 
       ![result](./result.png)    
 
