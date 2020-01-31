@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>V SrollBar</title>
+    <style>
+        .content{
+            width: 320px;
+            height: 756px;
+            border: 1px solid #555;
+        }
+        .content .scrollbar {
+            width: 20px;
+            height: inherit;
+            background: #ddd;
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+        .content .scrollbar div:first-child{
+            position: absolute;
+            top:0;
+            width: inherit;
+        
+  
+           transform:rotate(-0.25turn)
+        }
+        .content .scrollbar div:last-child{
+            position: absolute;
+            bottom:0;
+            width: inherit;
+        
+            transform:rotate(0.25turn);
+
+        }
+        .content .scrollbar div:nth-child(2){
+            position: absolute;
+            bottom:0;
+            top:0;
+            margin:auto;
+            width: inherit;
+          
+                height: 20px;
+
+        }
+    </style>
+</head>
+<body>
+
+
+    <main class="content">
+        <div class="scrollbar">
+            <div>&#9654;</div>
+            <div>&#9679;</div>
+            <div>&#9654;</div>
+        </div>
+    </main>
+    
+</body>
+</html>   
