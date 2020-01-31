@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car On the ROAD, CSS!</title>
+    <style>
+       body{
+           margin:0; /* reset the body default margin */
+       } 
+       #world{
+           width: 100vw; 
+           height: 100vh;
+           background-color: #333;
+       }
+       .sidewalk {
+           height: 5vh;
+           background-image: radial-gradient(#333 35%,#555 40%);
+           background-size: 15px 15px;
+           border-top: 15px solid #666;
+           border-bottom: 15px solid #666;
+       }
+       .road {
+           padding-top: 12vh;
+           height: 13vh;
+           background-color: #111;
+       }
+       .road .double-line {
+           border-top: 1vh double #fff;
+       }
+       .road .right .car{
+            background-image: url(car-top.png);
+            width: 128px;
+            height: 128px;
+            margin-left: 300px;
+            transform: rotate(180deg);
+       }
+       .road .right .car::before{
+           content:"";
+           display: block;
+           width: 100px;
+           height: 50px;
+           background-image:linear-gradient(270deg,yellow, transparent);   
+           border-radius: 25% 100% 100% 25%;
+           transform: translateX(-105px) translateY(25px);
+       }
+       .road .right .car::after{
+           content:"";
+           display: block;
+           width: 100px;
+           height: 50px;
+           background-image:linear-gradient(270deg,yellow, transparent);   
+           border-radius: 25% 100% 100% 25%;
+           transform: translateX(-105px) translateY(05px);
+       }
+    </style>
+</head>
+<body>
+    
+
+    <div id="world">
+        <section class="sidewalk left"></section>
+        <section class="road">
+
+            <div class="left">
+
+            </div>
+
+            <div class="double-line"></div>
+
+            <div class="right">
+                <div class="car"></div>
+            </div>
+
+        </section>
+        <section class="sidewalk right"></section>
+    </div>
+
+
+</body>
+</html>
