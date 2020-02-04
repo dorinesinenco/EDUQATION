@@ -11,5 +11,7 @@
   2. Cate randuri de text percepe browserul in **ul.stairs** ? 
 
 * Completati valorile marcate cu ``` ??? ``` in stiluri pentru a obtine rezultatul 
+ 
    ![result-1](./result-1.png)
+
 * Schimbati valorile astfel incat treptele sa coboare de la stanga la dreapta   
