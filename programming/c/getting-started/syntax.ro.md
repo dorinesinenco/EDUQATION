@@ -70,9 +70,9 @@
         // in cazul randului de mai sus "valoare" va fi inlocuit ---> in loc de %formater
 
         ```
-    * Formatele de afisare sunt foarte diverse, pentru inceput retineti 2: %d - numere intregi, %f - numere flotante
-    * Afisam temperatura medie pentru exemplul discutat
-    * 
+   * Formatele de afisare sunt foarte diverse, pentru inceput retineti 2: %d - numere intregi, %f - numere flotante
+   * Afisam temperatura medie pentru exemplul discutat
+   * 
 
         ```C
             printf("Temperatura medie pentru 3 zile: %d C", temperatura_medie);

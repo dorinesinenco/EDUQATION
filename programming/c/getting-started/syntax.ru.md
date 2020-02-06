@@ -58,8 +58,8 @@
         int temperatura_sredniaia     = ( temperatura_ponedelinik + temperatura_vtornik + temperatura_cetverg ) / 3;
         ``` 
 4.  Отображение данных.
-   * Функция **printf()** из "stdio" позволяет отображать отформатированные данные
-   * Чаще всего это используется в формуле:
+    * Функция **printf()** из "stdio" позволяет отображать отформатированные данные
+    * Чаще всего это используется в формуле:
         ```C
         printf("shablon vyvoda %formater si specialinymi mestoderjateleami", znacenie);
         // где шаблон задан в виде строки "... это строка" с разделителями "" 
@@ -68,7 +68,7 @@
         ```
     * Форматы отображения очень разные, для начала запомните 2: %d - целые числа,%f - плавающие числа
     * Мы показываем среднюю температуру для обсуждаемого примера
-    * 
+
 
         ```C
         printf("Sredniaia temperatura za 3 dnea: %d C", temperatura_sredniaia);
