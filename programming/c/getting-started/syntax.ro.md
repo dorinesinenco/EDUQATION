@@ -55,8 +55,7 @@
 
         ```C
         // calculul temperaturii medii
-        int temperatura_medie     = ( temperatura_luni + temperatura_marti + temperatura_miercuri
-        int temperatura_marti ) / 3;
+        int temperatura_medie     = ( temperatura_luni + temperatura_marti + temperatura_miercuri ) / 3;
         ``` 
 4. Afisarea datelor.
    * Functia **printf()** din "stdio" permite sa se afiseze datele formatat
