@@ -60,21 +60,25 @@
 4. Afisarea datelor.
    * Functia **printf()** din "stdio" permite sa se afiseze datele formatat
    * Cel mai des aceasta se utilizeaza in formula:
-    ```C
-       printf("shablon de afisare %formater cu casute special formatate", valoare);
-       // unde shablonul este dat ca sir de caractere "... acesta este un sir" delimitat prin "" 
-       // iar locurile "speciale" unde trebuie inserate automat valorile intr-un anumit format sunt marcate prin formule speciale care incep cel mai des cu  - %
-       // in cazul randului de mai sus "valoare" va fi inlocuit ---> in loc de %formater
-    ```
+
+
+        ```C
+
+        printf("shablon de afisare %formater cu casute special formatate", valoare);
+        // unde shablonul este dat ca sir de caractere "... acesta este un sir" delimitat prin "" 
+        // iar locurile "speciale" unde trebuie inserate automat valorile intr-un anumit format sunt marcate prin formule speciale care incep cel mai des cu  - %
+        // in cazul randului de mai sus "valoare" va fi inlocuit ---> in loc de %formater
+
+        ```
     * Formatele de afisare sunt foarte diverse, pentru inceput retineti 2: %d - numere intregi, %f - numere flotante
     * Afisam temperatura medie pentru exemplul discutat
     * 
 
-    ```C
-       printf("Temperatura medie pentru 3 zile: %d C", temperatura_medie);
-       //                                        ^                    v
-       //                                        ^<---- inlocuire <---v          
-    ```
+        ```C
+            printf("Temperatura medie pentru 3 zile: %d C", temperatura_medie);
+            //                                        ^                    v
+            //                                        ^<---- inlocuire <---v          
+        ```
 
 ---
 * SE CERE: 
