@@ -1,0 +1,19 @@
+body{
+    font-size: 50px;
+    font-family: monospace;
+}
+
+#player {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 0.5em;
+}
+#player .screen {
+    text-align: right;
+    font-size: 1em ;
+}
+#player .controls button{
+    width: 4.7em;
+    height:  4.2em;
+}
