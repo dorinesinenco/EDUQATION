@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INLINE NAV with positioned elements</title>
+    <style>
+        /* reset */
+        body,ul{margin:0;font-family: Arial, Helvetica, sans-serif;}
+        ul{padding:0;list-style: none;}
+        a{text-decoration: none;}
+        /* styling */
+        .navbar{
+            border-bottom: 0.1em solid brown;
+            padding: 2em;
+        }   
+        .navbar li {
+            display: inline-block;
+        }   
+        .navbar li a{
+            font-weight: bold;
+            color: #999;
+        }  
+        .navbar li:first-child a{
+            position: relative;
+            top: -.5em;
+        }
+        .navbar li:nth-child(2) a{
+            position: relative;
+            top: .5em;
+        }
+        .navbar li:first-child a,
+        .navbar li:nth-child(2) a{
+            font-size: 2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="">POSITION</a></li>
+            <li><a href="">RELATIVE</a></li>
+            <li><a href="">Navbar</a></li>
+            <li><a href="">Example</a></li>
+            <li><a href="">!!!</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
