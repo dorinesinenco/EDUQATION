@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Animation</title>
+    <style>
+        .ball{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            background-color: green;
+            position: absolute;
+            animation: fall 1s forwards;
+        }
+        @keyframes fall{
+            from{ top: 0px; }
+            to{ top: 500px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ball"></div>
+    <script>
+        
+        setInterval(function(){
+            let ball = document.querySelector('.ball');
+            console.log(ball.getBoundingClientRect())
+        },2000)
+    </script>    
+</body>
+</html>
