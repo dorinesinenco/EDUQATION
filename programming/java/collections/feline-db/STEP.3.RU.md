@@ -31,7 +31,7 @@
 ```
    ************* CONSUMER **************  ********** PRODUCER **********
    *                                   *  *                            *
-   *                                   *  *            collection<Cat> *
+   *                                   *  *            collection<>    *
    *    [clonnedCat]             <<--- findById(id)<<  0 - cat(id=1)   *
    *                                   *  *            1 - cat(id=2)   *
    *                                   *  *            2 - ...         *
