@@ -35,4 +35,4 @@
     1. создать документ тип которого "Contract", титул - "Java Developer Hiring Contract", И контент - "1. Working hours per day: 6\n2. Earn per hour: 15EUR\n3. Hollidays per year: 30days."
     2. Сделать копию, изменить ее тип на "Contract Copy"
     3. Сделать 3 копии с копии контракта, изменить их тип на "Archived Contract Copy"
-    4. Проверить все полученные копии - принтом
+    4. Проверить все полученные копии - println() - ом
