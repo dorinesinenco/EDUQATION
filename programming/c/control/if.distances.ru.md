@@ -4,15 +4,15 @@
 
 > Если бы у нас было два целых числа, алгоритм, который определил бы, какое из них минимально, выглядел бы так:
 
-    ```c
-        int a = 10;
-        int b = 20;
-        if( a < b ) {
-            printf("minimal - a");
-        } else {
-            printf("minimal - b");
-        }
-    ```
+```c
+    int a = 10;
+    int b = 20;
+    if( a < b ) {
+        printf("minimal - a");
+    } else {
+        printf("minimal - b");
+    }
+```
 
 ---
 
