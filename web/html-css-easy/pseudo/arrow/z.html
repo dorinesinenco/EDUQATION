@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSEUDO SELECTORS | Section with content</title>
+    <style>
+        .content {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .content::before{
+
+        }
+        h1{
+            color: #333;
+            font-size: 30px;
+        }
+        h1::before{
+            content: "<";
+            margin-right: 10px;
+            color: brown;
+        }
+        h1::after{
+            content: ">";
+            margin-left: 10px;
+            color: brown;
+        }
+        .marked{
+            color: red;
+        }
+        .marked::before{
+            content:":";
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="content">
+        <h1>The USE of <span class="marked">pseudo</span> selectors</h1>
+        <p>CSS pseudo classes and elements extend the selection capabilities of a web designer.</p>
+    </section>
+    
+</body>
+</html>
