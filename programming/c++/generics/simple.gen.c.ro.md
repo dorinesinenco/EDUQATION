@@ -31,7 +31,7 @@
 ---     
 
 * SE CERE:
-  1. Declare o clasa numita **Box** (cutie), care poate contine o singura valoare de orice tip in interior
+  1. Sa se declare o clasa numita **Box** (cutie), care poate contine o singura valoare de orice tip in interior
   2. Valoarea din interior trebuie "protejata" de la accesul din afara clasei
   3. Sa se adauge constructorul default si parametrizat care poate primi valoarea din afara, pentru a o seta in interior
   4. Sa se adauge metoda **print()** care afiseaza valoarea din cutie
