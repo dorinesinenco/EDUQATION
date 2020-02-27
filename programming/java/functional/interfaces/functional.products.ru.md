@@ -18,13 +18,14 @@
 * Данны следующие функциональные интерфейсы:
   *  
 
-      ```java
-      @FunctionalInterface
-      interface VATFunction 
-      { 
-          Product calculate(Product product); 
-      } 
-      ```
+    ```java
+    @FunctionalInterface
+    interface VATFunction 
+    { 
+        Product calculate(Product product); 
+    } 
+    ```
+    
       который содержит логику вычисления стоимости НДС (он должен работать так: переданному продукту установить цену при вычислении НДС больше на 18% ) и вернуть "обновленный" продукт
   * 
       ```java
