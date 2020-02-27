@@ -27,6 +27,7 @@
     ```
 
     который содержит логику вычисления стоимости НДС (он должен работать так: переданному продукту установить цену при вычислении НДС больше на 18% ) и вернуть "обновленный" продукт
+    
   * 
       ```java
       @FunctionalInterface
@@ -38,23 +39,26 @@
      определяет если продукт из категории "health" (здоровье)
         
   * 
-      ```java
-      @FunctionalInterface
-      interface IsSHPredicate 
-      { 
-          Boolean test(Product product); 
-      } 
-      ```
-     определяет если продукт из категории "second hand" (б / у)
+    ```java
+    @FunctionalInterface
+    interface IsSHPredicate 
+    { 
+        Boolean test(Product product); 
+    } 
+    ```
+
+    определяет если продукт из категории "second hand" (б / у)
+
   * 
-      ```java
-      @FunctionalInterface
-      interface ConsolePrintConsumer 
-      { 
-          void consume(Product product); 
-      } 
-      ```
-     получает продукт и выводит его в стандартную консоль 
+    ```java
+    @FunctionalInterface
+    interface ConsolePrintConsumer 
+    { 
+        void consume(Product product); 
+    } 
+    ```
+
+    получает продукт и выводит его в стандартную консоль 
         
 
 * Требуется:
