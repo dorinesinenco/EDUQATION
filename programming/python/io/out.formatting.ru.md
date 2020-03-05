@@ -1,23 +1,21 @@
-# Functiile de intrare / iesire. Afisarea. Afisarea formatata
+# Функции ввода / вывода. Отображение информации. Отформатированное отображение
 
+> print() - это функция, которая позволяет отображать на экране в текстовом виде любое значение, переданное в качестве аргумента.
 
-> print() este o functie care permite sa se afiseze pe ecran sub forma de text orice valoare transmisa ca argument
-
-> Functia "print" poate primi mai multe valori separate prin spatii gen ```print(val1,val2,val3,..)``` acestea vor fi afisate in acelasi rand printr-un spatiu
-
+> Функция "print" может принимать несколько значений, разделенных пробелами, например ```print (val1, val2, val3, ..)```, они будут отображаться в одной строке через пробел
 ---
 
-* Deseori cand se utilizeaza functiile de afisare, datele sunt "insotite" de un text (sir de caractere) pentru a infrumuseta rezultatul final, acest text de obicei este delimitat sau de 'text' (apostrofa) sau de "text" (ghilimele)
-* In interiorul textului pot fi utilizate orice simboluri si alfebete, atat timp cat consola in care acestea se afiseaza le suporta ca si set de caractere
-* Se recomanda a se retina cateva asa-numite "caractere speciale", care permit executarea anumitor actiuni in text, sau afisarea anumitor simboluri "nestandarte". De exemplu "\n" - va trece cursorul din rand nou. Aceste caractere pot fi usor observate in text datorita formulei lor de scriere care se rezuma la "\code" - unde **code** este codul caracterului cele mai importante caractere speciale de retinut sunt:
-  * \n - trecere din rand nou
-  * \r - returnarea cursorului la inceputul randului
-  * \\ - caracterul unui \
-  * \t - tabularea
-  * \uXXXX - codul utf al oricarui caracter special suportat
+* Часто при использовании функций отображения данные «сопровождаются» текстом (набором символов), чтобы украсить конечный результат, этот текст обычно оборачивается либо одинарными кавычками 'text', либо двойными "text".
+* Внутри текста могут использоваться любые символы и алфавиты, при условии, что консоль, в которой они отображаются, поддерживает их как набор символов
+* Рекомендуется запомнить некоторые так называемые «специальные символы», которые позволяют выполнять определенные действия в тексте или отображать определенные «нестандартные» символы. Например, "\n" - переместит курсор на новую строку. Эти символы могут быть легко обнаружены в тексте благодаря их формуле написания, которая выглядит следующим образом «\code» - где **code** - код символа. Наиболее важные специальные символы:
+  * \n - переход на новую строку
+  * \r - возврат курсора в начало строки
+  * \\ - символ \
+  * \t - табуляция
+  * \uXXXX - UTF-код любого специального поддерживаемого символа
 ---
 
-* Priviti urmatorul fragment de cod:
+* Посмотрите на следующий фрагмент кода:
   ```python
   price_pizza_mdl = 75
   name_pizza = "Pizza Diverso"
@@ -31,8 +29,8 @@
   1.  Pizza Diverso :  75 MDL
   ```
 
-* Adaugati in aplicatia de mai sus inca 2 produse din meniu cu denumirea si pretul respectiv, urmand acelasi patern de denumire al variabililor si acelasi patern de afisare pe ecran
-* Adaugati doua linii decorative la inceputul si la sfarsitul acestui meniu utilizand caracterul special ```"\u2605"``` stelutza, (puteti gasi mai multe [caractere speciale utf-8 aici]([utf8icons.com](https://www.utf8icons.com/) ) astfel incat rezultatul sa arate cam asa
+* Следуя тому же принципу именования переменной и отображения на экране, добавьте в вышеуказанное приложение еще 2 продукта из меню с названием и соответствующей ценой.
+* Добавьте две декоративные линии в начале и конце этого меню, используя специальный символ ```"\u2605"``` звездочка, (вы можете найти больше [специальных символов utf-8 здесь]([utf8icons.com](https://www.utf8icons.com/) ) так, чтобы результат выглядел следующим образом:
       
   ```
   ★★★★★★★★★★★★★★★★★★★★
@@ -42,4 +40,4 @@
   ★★★★★★★★★★★★★★★★★★★★
   ```
   
-HINT! in Python daca scrieti o expresie de tipul "caracter"*10 - veti obtine repetarea acestui caracter de exact 10 ori  
+ПОДСКАЗКА! в Python, если ввести выражение «символ»*10 - то вы сможете повторить этот символ ровно 10 раз
