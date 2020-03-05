@@ -23,7 +23,7 @@
   print("1. ", name_pizza, ": ", price_pizza_mdl, "MDL" )
   ```   
   
-  rezultatul afisarii ar fi
+  Результат будет следующим:
   
   ```
   1.  Pizza Diverso :  75 MDL
