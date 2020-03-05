@@ -32,7 +32,7 @@
   ```
 
 * Adaugati in aplicatia de mai sus inca 2 produse din meniu cu denumirea si pretul respectiv, urmand acelasi patern de denumire al variabililor si acelasi patern de afisare pe ecran
-* Adaugati doua linii decorative la inceputul si la sfarsitul acestui meniu utilizand caracterul special ```"\u2605"``` stelutza, (puteti gasi mai multe [caractere speciale utf-8 aici]([utf8icons.com](https://www.utf8icons.com/) ) astfel incat rezultatul sa arate cam asa
+* Adaugati doua linii decorative la inceputul si la sfarsitul acestui meniu utilizand caracterul special ```"\u2605"``` stelutza, (puteti gasi mai multe [caractere speciale utf-8 aici](https://www.utf8icons.com/) ) astfel incat rezultatul sa arate cam asa
       
   ```
   ★★★★★★★★★★★★★★★★★★★★
