@@ -1,26 +1,25 @@
-# Identificarea si schemele de numire.
+# Принципы идентификации и именования.
 
-Foarte multe limbaje folosesc notiunea de "identificator", cel mai des acesta reprezinta o denumire unica 
-care identifica o variabila sau o functie. Exista diferite reguli de denumire a intentificatorilor, dar in linii generale
-sunt aplicate urmatoarele recomandari/reguli:
-* se recomanda utilizarea setului de simboluri a..zA..Z0..9_ (alfabetul latin, cifrele si cratima de jos)
-* nu se incepe denumirea cu cifre
-* denumirile sunt sensibile la registru ( ex. **price** nu este egal cu **Price** )
-* denumirile compuse sunt separate vizual ( ex. **drink_price** sau **executeAction()** sau **UserEnvironment** )
+Во многих языках используется понятие «идентификатор», чаще всего это уникальное имя, которое идентифицирует переменную или функцию. Существуют разные правила именования идентификаторов, но в целом
+применяются следующие рекомендации / правила:
+* рекомендуется использовать набор символов a..zA..Z0..9_ (латинский алфавит, цифры и нижнее подчеркивание)
+* название не должно начинаться с цифры
+* названия являются регистрочувствительными ( напр. **price** не тоже самое, что **Price** )
+* составные имена разделяются визуально ( напр. **drink_price** или **executeAction()** или **UserEnvironment** )
 
 ---
 
-* In baza explicatiei de mai sus si a urmatorului fragment de cod (care declara 2 variabile de tip **string** cu numele si prenumele studentului) 
+* На основе приведенного выше объяснения и следующего фрагмента кода (который объявляет 2 переменные в формате **string** с именем и фамилией учащегося) 
 
-    ATENTIE, codul contine o eroare lasata INTENTIONAT!:
+    ВНИМАНИЕ, код содержит ошибку, оставленную НАМЕРЕННО!:
 
     ```python  
     students_firstname = "John"
     students lastname  = "Doe"
     # ???
     ```
-    sa se completeze acest fragment de cod astfel incat acesta sa contina si:
-    * o variabila care indica varsta
-    * o variabila care indica tara de provenienta
-    * o variabila care indica orasul de bastina
-* utilizand functia **print()** afisati fiecare valoare pe un rand separat
+    дописать этот фрагмент кода, чтобы он также содержал:
+    * переменную, указывающую возраст
+    * переменную, которая указывает страну происхождения
+    * переменную, указывающую город 
+* используя функцию **print()** выводить каждое значение на отдельной строке
