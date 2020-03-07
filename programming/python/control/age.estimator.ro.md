@@ -34,7 +34,7 @@
 
 * Sa se scrie un program, care citeste de la tastatura anul nasterii unei persoane dat in 4 cifre (gen 1990) si executa urmatoarele:
   1.  Verifica daca valoarea introdusa corespunde diapazonului cerut (se permit doar valori incepand cu 1900 si incheind cu ANUL CURENT). In cazul in care valoarea este in afara diapazonului - se afiseaza un mesaj cu eroare, in caz contrar, continuam cu punctul 2
-  2.  Calculeaza varsta in ani
+  2.  Calculeaza varsta in ani si o afiseaza
   3.  Estimeaza varsta in cuvinte si afiseaza atat varsta cat si mesajul gen:
       1.  1-3 ani - "baby"
       2.  4-9 ani - "kid"
