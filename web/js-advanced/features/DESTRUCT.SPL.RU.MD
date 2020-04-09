@@ -5,9 +5,9 @@
 ```js
 
 class Order {
-    constuctor( id, client, cost ){
+    constuctor( id, name, cost ){
         this.id = id                // A
-        this.client = client        // A
+        this.name = name        // A
         this.cost = cost            // A
     }
 }
