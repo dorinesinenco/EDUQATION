@@ -1,0 +1,55 @@
+$front-color: brown;
+$back-color: #222;
+$size: 200px;
+ 
+
+
+#row{
+
+    background-image: linear-gradient( /* ??? 1 */, $back-color, /* ??? 2 */ );
+
+    // 3) START
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // 3) END
+    
+    perspective: 7 * $size;
+
+    div { // 4)
+        width: $size;
+        height: $size;
+        background-color: $front-color;
+        text-align: center;
+        line-height: $size;
+        font-size: 0.3 * $size;
+
+        // vertical center!
+        // 5) START
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin:auto;
+        // 5) END
+        
+
+        @for $n from 1 through 36 { // 6)
+            &:nth-child(#{$n}){     // 7) 
+                
+                transform: translateZ( -$n * 100px ) 
+                           translateX( ($n - 1) * $size * 0.5 ) 
+                           rotateY(-45deg);
+
+                background-color: darken($front-color, /* 8 ??? */);            
+                z-index: -1 * $n; // 9 
+
+                box-shadow: 0 0 3px 5px darken($back-color, /* 10 ??? */);
+                
+            }
+        }
+
+    }
+}
+
