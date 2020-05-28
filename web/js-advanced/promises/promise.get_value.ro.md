@@ -10,7 +10,7 @@
       second: 2000
   }
   ```
-* Sa presupunem ca avem uite asa o functie **getValueOf** scopul careia este sa incerce sa returneze valoarea unei proprietati din obiectul "data", doar ca cu o intarziere aliatorie intre 0..3 secunde. Dupa cum vedeti aceasta se realizeaza prin **setTimeout**. In momentul in care a trecut timpul de asteptare, vom transmite functiei "callback" o eroare - daca proprietatea nu exista sau valoarea acesteia daca ea exista. 
+* Sa presupunem ca avem uite asa o functie **getValueOf** scopul careia este sa incerce sa returneze valoarea unei proprietati din obiectul "data", doar ca cu o intarziere aliatorie intre 0..3 secunde. Dupa cum vedeti aceasta se realizeaza prin **setTimeout**. In momentul in care a trecut timpul de asteptare, vom transmite functiei "callback" o eroare - daca proprietatea nu exista sau valoarea acesteia daca ea exista. Atentie la faptul ca este utilizata metoda predefinita **.hasOwnProperty()** pentru a determina daca obiectul are proprietatea dorita.
 
     ```javascript
     function getValueOf( property , callback ){
