@@ -44,7 +44,7 @@ class HorizontalLine {
 ```java
 HorizontalLine.drawLine(7);  
 VerticalLine.drawLine(3);  
-Rectangle.draRect(4,4);
+Rectangle.drawRect(4,4);
 ```
 * то мы увидим
 
