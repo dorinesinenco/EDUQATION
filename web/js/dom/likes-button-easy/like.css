@@ -1,0 +1,13 @@
+button {
+    border: none;
+    font-size: 20px;
+    cursor: pointer
+}
+
+.off {
+    color: #888;
+}
+
+.on {
+    color: #56A
+}
