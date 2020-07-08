@@ -55,4 +55,25 @@
     3. ....
     ```
   
+---
 
+ПРИМЕЧАНИЕ!! 
+Для использования "java Faker" (библиотека для генерирования фейковых данных) как стороннюю библиотеку следуйте принципу что ниже:
+ 1. заходим сюда, скачиваем .jar файлы самой библиотеки и ее зависимости и копируем все файлы в папку "libs" которую надо создать в своем проекте 
+    1. https://mvnrepository.com/artifact/com.github.javafaker/javafaker/1.0.2
+    2. https://mvnrepository.com/artifact/com.github.mifmif/generex/1.0.2
+    3. https://mvnrepository.com/artifact/org.apache.commons/commons-lang3/3.5
+    4. https://mvnrepository.com/artifact/org.yaml/snakeyaml/1.23
+ 2. После, клик правый на свой проект - "Build Path > Configure Build Path"
+ 3. В окне что вылезло, выбираем "Libraries" потом в "Classpath"
+ 4. Жмем "Add jars", выбираем скаченные файлы из папки "libs" - проекта и "Apply, OK"
+ 5. Это подскажет компилятору ГДЕ искать библиотеки с необходимым дополнительным функционалом
+    (По такому же принципу, можно в ручную подключить любую другую библиотеку!) 
+      
+ 6. В коде где нужно сгенерировать фальшивые данные, впишите код :
+    ```java
+    Faker faker = new Faker();
+
+    String name = faker.name().fullName();
+    ```
+более детальная дока тут [docs](https://github.com/DiUS/java-faker)
