@@ -2,7 +2,7 @@
 
 1. Создаем приложение 
 
-    [image 1]: ./rjar1.png
+    [image 1](./rjar1.png)
 
 2. Экспортируем как **RUNNABLE**
 
