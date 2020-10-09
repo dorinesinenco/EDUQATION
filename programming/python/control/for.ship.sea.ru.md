@@ -12,9 +12,9 @@
         small_ship = 5
         for x in range(1,11):
             if x == small_ship:
-            print( "W", end="" )
+              print( "W", end="" )
             else:
-            print( "~", end="" )
+              print( "~", end="" )
 
         ```
 
