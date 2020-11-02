@@ -16,7 +16,6 @@ class Healthy():
   2. Cum se numeste metoda care participa la instantierea unui nou obiect dintr-o clasa?
   3. Unde se indica numele clasei superioare (de la care aceasta mosteneste structura) in cod?
   
-
 * se cere sa se adauge modificarile:
   a. Sa se adauge proprietatea **fullName** obiectelor de tip - Healthy
   b. Sa se adauge "constructorul" clasei astfel incat el sa atribuie proprietatea **fullName**
