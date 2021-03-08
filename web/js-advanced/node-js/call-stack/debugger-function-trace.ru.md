@@ -53,11 +53,11 @@ while( (n = rdp.next()) && randomInts.length != 10 ) {
      ```js
    
     let randomInts = [] 
-    randomInts.push( ??? (function(){
-      const provider = new require('./provider.js').RandomDataProvider( 0, 100 ) 
+    randomInts.push( ??? (function( ??? ){
+      const provider = new require('./provider.js').RandomDataProvider( ???, ??? ) 
       ??? 
       return ???
-    })(1,100) )
+    })(0,100) )
     randomInts.forEach( ??? )
     
     ```
