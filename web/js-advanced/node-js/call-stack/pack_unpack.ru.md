@@ -10,25 +10,25 @@
        {
          "client_id": 1,
          "amount": 100.00,
-         "date": "2021-01-01"
+         "date": "2021-01-01",
          "method": "paypal"
        },
        {
          "client_id": 2,
          "amount": 50.00,
-         "date": "2021-01-02"
+         "date": "2021-01-02",
          "method": "paypal"
        },
        {
          "client_id": 1,
          "amount": 200.00,
-         "date": "2021-01-03"
+         "date": "2021-01-03",
          "method": "visa"
        },   
        {
          "client_id": 2,
          "amount": 100.00,
-         "date": "2021-01-04"
+         "date": "2021-01-04",
          "method": "visa"
        }        
      ]
