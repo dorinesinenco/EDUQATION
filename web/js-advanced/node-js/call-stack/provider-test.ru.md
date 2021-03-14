@@ -28,7 +28,7 @@ for(let testN = 1; testN <= nTests; testN++ )
   
   // testing the result
   if(randomInts.length != SIZE ) {
-    console.err(`Test No: ${testN} failed, REASON: ${SIZE} != ${randomInts.length}`)
+    console.error(`Test No: ${testN} failed, REASON: ${SIZE} != ${randomInts.length}`)
   }
   
 }
