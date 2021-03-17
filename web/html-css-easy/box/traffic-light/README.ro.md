@@ -11,4 +11,5 @@
 * ATENTIE la selectorii compusi!
 ---
 * in baza [index.html](./index.html) sa se completeze stilurile marcate cu ```/* ??? */``` astfel incat sa se obtina urmatorul rezultat
+  
   ![result](./result.png)
