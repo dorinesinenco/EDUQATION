@@ -35,7 +35,7 @@
   
 * ТРЕБУЕТСЯ: переписать код используя асинхронный подход начиная с **fs.readFile()**, подсказка:
   ```js
-  async readFromFile( ... ) {
+  async function readFromFile( ... ) {
     const data = await readFile(...)
     ...
   }
