@@ -13,7 +13,7 @@ console.log( route )
 // results in
 Route {
   path: "/some/path",
-  param: [
+  parameters: [
     { parameter1: "value1" },
     { parameter2: "value2" }
   ]
