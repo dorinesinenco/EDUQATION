@@ -17,10 +17,5 @@
    readJSONFile( "products", (data) => { console.log(data) }) 
    
    ```
-   функция **readHTMLPage( name, cb )** должна получить название страницы HTML, найти ее по указанному пути и вернуть используя **callback**
-   то есть код который ее вызывает будет выглядеть так
-   ```js
-   readHTMLPage("index.html", (content)=>{ console.log(content) })
-   ```
 
 ПРИМЕЧАНИЕ - для начала сделать простую проверку этих двух функций (test.js который загрузит и выведит данные)
