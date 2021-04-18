@@ -8,14 +8,14 @@
   daca am aplica metoda (functia) **.append()** - acesta ar primi pe ultima pozitie o valoare noua
   ```py
   a.push( 40 )
-  //               [10,20,30,40]
-  // new value                ^
+  #               [10,20,30,40]
+  # new value                ^
   ```
   daca am aplica metoda (functia) **.insert()** - acesta ar primi pe prima pozitie o valoare noua, atentie primul zero e indicele!
   ```py
   a.insert( 0, -10 )
-  //               [-10,10,20,30,40]
-  // new value      ^
+  #               [-10,10,20,30,40]
+  # new value      ^
   ```
 
 * imaginati-va urmatorea colectie de valori de tip **str**: sa presupunem ca acestea sunt numele clientilor care stau in "coada" de asteptare a unui restaurant unde si-au facut comenzile din meniu 
