@@ -15,7 +15,7 @@
   ```py
   a.insert( 0, -10 )
   #               [-10,10,20,30,40]
-  # new value      ^
+  # new value        ^
   ```
 
 * imaginati-va urmatorea colectie de valori de tip **str**: sa presupunem ca acestea sunt numele clientilor care stau in "coada" de asteptare a unui restaurant unde si-au facut comenzile din meniu 
