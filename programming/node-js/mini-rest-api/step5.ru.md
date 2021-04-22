@@ -14,7 +14,7 @@
   2. В него поместить следующий скелетон класса Route на этот раз мы используем класс как статичный контейнер (т е - делать с него объекты не будем!):
        ```js
        
-       exports.Route = class Route 
+       exports.Route = class Route {
           
           static resolve( url, cb ) {            // method that resolves the ROUTING process
             if (url == "/ping") {
