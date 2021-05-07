@@ -16,11 +16,11 @@
   
   потом в инструмента выбора цветов можно передвинуть указатель правее - чтобы получить полее яркий вариант 
   
-  ![image](https://user-images.githubusercontent.com/4667821/117400179-c5eb5480-af0a-11eb-8088-18151d3a60db.png)
+  ![image](https://user-images.githubusercontent.com/4667821/117400417-3d20e880-af0b-11eb-9e12-e511033c5b74.png)
   
   и левее чтобы получить вариант бледнее
   
-  ![image](https://user-images.githubusercontent.com/4667821/117400251-e9ae9a80-af0a-11eb-8316-732dd753271a.png)
+  ![image](https://user-images.githubusercontent.com/4667821/117400452-55910300-af0b-11eb-9fdf-145101f56e7c.png)
 
   https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Colors/Color_picker_tool
 
