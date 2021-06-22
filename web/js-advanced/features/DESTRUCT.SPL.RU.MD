@@ -1,14 +1,14 @@
 # Деструктуризация
 
-Примените несколько вариантов деструктуризации в местах "A" и "B"
+Примените деструктуризацию и/или spread operator в местe "???"
 
 ```js
 
 class Order {
     constuctor( id, name, cost ){
-        this.id = id                // A
-        this.name = name        // A
-        this.cost = cost            // A
+        this.id   = id              
+        this.name = name           
+        this.cost = cost           
     }
 }
 
@@ -22,6 +22,6 @@ let data = {
 }
 
 
-let clients = [ data.orders[0].name, data.orders[1].name, data.orders[2].name ] // B
+let clients = [ data.orders[0].name, data.orders[1].name, data.orders[2].name ] // ???
 
 ```
