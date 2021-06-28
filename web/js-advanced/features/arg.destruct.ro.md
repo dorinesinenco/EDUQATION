@@ -5,7 +5,7 @@
   ```js
   
   const processOrder = ( order ) => {
-     let cost = product.quantity * product.price.amount
+     let cost = order.quantity * order.price.amount
      return cost
   }
   
