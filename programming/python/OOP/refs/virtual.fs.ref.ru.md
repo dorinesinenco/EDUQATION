@@ -43,9 +43,9 @@
 
   ```py
   photos = Directory("Photos")
-  photos.files.push(File("summer_o1.jpg"))
-  photos.files.push(File("summer_o2.jpg"))
-  photos.files.push(File("summer_o3.jpg"))
+  photos.files.append(File("summer_o1.jpg"))
+  photos.files.append(File("summer_o2.jpg"))
+  photos.files.append(File("summer_o3.jpg"))
   
   ```
 * выводим структуру на экран
