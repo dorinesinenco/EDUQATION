@@ -5,7 +5,7 @@
   2. Eliminati din "skeletonul" generat:
     * toate fisierele in afara de "index.html" din folder-ul "public"
     * toate fisierele in afara de "App.js" si "index.js"
-    * in componenta App -> refaceti codul astfel incat ea sa fie declarata ca si clasa (nu functie) si sa randeze doar "<button>Click</button>"
+    * in componenta App -> refaceti codul astfel incat ea sa fie declarata ca si clasa (nu functie) si sa randeze doar ```<button>Click</button>```
     * Rulati aplicatia si corectati toate erorile de referinta care apar (din cauza fisierelor eliminate vor fi erori de referire la acestea) 
   
   
