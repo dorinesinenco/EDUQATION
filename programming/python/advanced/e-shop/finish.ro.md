@@ -1,0 +1,23 @@
+## Finisarea GUI (sau CLI)
+
+1. Împărțiți fereastra în câteva secțiuni (puteți utiliza acest material pentru implementare - https://www.youtube.com/watch?v=9Hyltpk2tSM)
+2. Comutatorul valutar, butonul de sortare a produselor, câmpul de căutare și conținutul catalogului în sine pot fi distribuite în aceste secțiuni
+3. Adăugați (dacă nu este încă) un buton pentru a sorta produsele în funcție de preț, ar trebui să fie ceva de genul ```[Preț ^]```, de exemplu, ceea ce înseamnă că atunci când faceți clic, produsele vor fi sortate în ordine crescătoare. Legați funcția ```sortByPrice(dir)``` de el. Parametrul „dir” va indica direcția sortarii. Când butonul este apăsat pentru prima dată, valoarea "asc" (ascendent - crescător) intră în el, iar când este apăsat din nou - "desc" (descendent). Această funcție va fi doar o „punte” - nu ar trebui să aibă algoritmul de sortare în sine, ea apelează metodele ```allByPriceAscending()``` sau ```allByPriceDescending()``` din ```ProductRepositoryFactory```. Puteți găsi o săgeată în sus sub forma unei imagini sau a unui simbol special (dacă doriți). Ar trebui să se schimbe în sus sau în jos în funcție de direcția de sortare.
+4. Pentru comoditate creati o functie separata de stergere a ferestrei de exemplu ```clearContent()```
+5. La afisarea listei de produse in cos in drept cu fiare produs afisati 2 butoane (+ -, ```increaseQuantity(itemId)```, ```decreaseQuantity(itemId)```) si un camp (Entry - class, ```changeQuantity(itemId)```) pentru a introduce manual cantitatea (quantity) item-urilor specific fiecarui produs, de asemenea in drept cu fiecare un buton (x, ```removeItem(itemId)``` )  - pentru stergerea produsului din cos. Dupa cum v-ati dat seama, in paranteze au fost mentionate functiile ce trebuie legate de aceste butoane. Intr-un final un rand din cos va arata asa (in paranteze sunt elementele active)
+  ```
+  "Some Product"  100.00USD x [ + ][ 2 ][ - ] = 200.00USD [ x ]
+  ```
+  ATENTIE!!! in tkinter puteti leca anumite evenimente (de ex - apasarea tastei ENTER) de anumite elemente (de ex. Entry acolo unde se adauga cantitatea de produse), utilizand asa un cod
+  ```py
+  quantityEtry.bind('<Key-Return>', quantityChanged)
+  ```
+  in acest exemplu nu am utilizat expresia lambda pe care noi o utilizam pentru a transmite ID, ramane pe seama voastra ))
+  
+6. Pe pagina cosului faceti asa ca butonul ```[Complete Order]``` (legat de functia - ```completeOrder()```) sa curate fereastra si sa creeze in ea un camp in care clientul ar putea sa isi introduca adresa de email, adresa sa fizica si numele. Daca doriti sa improvizati, puteti duce pana la capat entitatea ```models.Client``` si o fabrica/repo dedicata clientilor cu logica afiliata. Pentru comoditate se mai poate face astfel incat, daca un client a facut deja o comanda, pentru cea de a doua- el sa introduca doar email-ul, sa se execute o cautare prin repozitoriu, si daca acesta exista -campurile celelalte sa se completeze automat cu datele din entitatea sa (obiect). 
+7. Functia de expediere a email-urilor - tre sa formeze un mesaj ca o  "nota de plata" frumos formatat, cu lista de produse si totalul comenzii
+8. Se poate cu ajutorul Entry + Button de organizat un camp de cautare in partea de sus ```[                  ][ search ]```, introducand text si apasand pe buton sa reactioneze functia ```searchProduct()``` care poate face uz de metodele din repozitoriu de cautare a produsului dupa denumire, rezultatul cautarii poate sa apara in fereastra (dupa curatarea acesteia) 
+9. Pot fi create categorii (daca aveti entitatea ```models.Category```) sa o legati de produs si sa o afisati ca o "lista derulanta" (clasa OptionMenu) care ar aduce la faptul ca o  oarecare functie ```filterProductsByCategory(categoryId)``` - care face uz de metode special create in repozitoriu, ar afisa doar acele produse care fac parte din categoria selectata 
+10. Comutatorul de valuta, tre sa itereze prin toate produsele din catalog, recalculand preturile si afisand rezultatul in fereastra (catalogul)
+11. Pentru o imagine mai buna, se poate de schimbat culorile de fundal si text pentru elementele active (parametrii foreground, background, highlightbackground - le au aproape toate elementele) 
+12. Pentru a imbunatati interfata vizuala, puteti sa va ganditi la toate situatiile "pesimiste" (un soi de testing manual) si sa ganditi raspunsul sau acitunea "corecta" care trebuie afisata in cazuri de genul: cosul este gol, dar clientul il acceseaza, clientul cauta dupa nume, dar nu este rezultat, etc - esenta este ca atunci cand se proiecteaza o interfata, orice situatie neclara, poate fi interpretat GRESIT de catre client ;)
