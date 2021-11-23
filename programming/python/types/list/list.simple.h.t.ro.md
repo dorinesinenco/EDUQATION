@@ -7,7 +7,7 @@
   ```
   daca am aplica metoda (functia) **.append()** - acesta ar primi pe ultima pozitie o valoare noua
   ```py
-  a.push( 40 )
+  a.append( 40 )
   #               [10,20,30,40]
   # new value                ^
   ```
