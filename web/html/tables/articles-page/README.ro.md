@@ -24,4 +24,8 @@ creati o macheta cu un tabel de latimea = 1100 pixeli care s corepsunda rezultat
 
 ---
 
+NOTA 1: pentru poze de diverse dimensiuni incercati https://picsum.photos/
+
+NOTA 2: pentru a genera cantitati mari de texte (lorem) folositi in redactor formula lorem100 (100 de cuvinte) si apasati TAB sau tasta care activeaza EMMET-ul
+
 BONUS: Incercati sa dati atentie locurilor marcate cu "???" in scheletul HTML initial, si sa completati valorile corecte!
