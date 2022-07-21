@@ -14,3 +14,6 @@ si referinte utile
 * https://code.org/learn
 * https://codecombat.com/play/game-dev-hoc?hour_of_code=true
 * https://apps.apple.com/us/app/python-lab/id1147471002
+* https://www.codingame.com/home
+* https://codecombat.com/
+* https://www.sololearn.com/home
