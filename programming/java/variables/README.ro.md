@@ -30,29 +30,29 @@
 * Este necesar să se creeze o nouă aplicație cu funcția „main()” ca fișier (clasă) numit „DateVariablesApp”
 * Cu acest schelet (fișier DateVariablesApp.java)
      ```java
- public class DateVariablesApp {
+         public class DateVariablesApp {
 
-        public static void main(String[] args){
+                public static void main(String[] args){
 
-            int year  = 2019;
-            int month = 5;
-            int day   = 25;
+                    int year  = 2019;
+                    int month = 5;
+                    int day   = 25;
 
-     
-            System.out.print("Today is: ");
-            System.out.print( year );
-            System.out.print("-")
-            System.out.print( month );
-            System.out.print("-");
-            System.out.print( day );
 
-            // 1) rulati si verificati executia codului
-            // 2) refaceti codul astfel incat acesta sa afiseze urmatorul mesaj:
-                //  > Today is: 25-5-2019
+                    System.out.print("Today is: ");
+                    System.out.print( year );
+                    System.out.print("-")
+                    System.out.print( month );
+                    System.out.print("-");
+                    System.out.print( day );
 
-        }
+                    // 1) rulati si verificati executia codului
+                    // 2) refaceti codul astfel incat acesta sa afiseze urmatorul mesaj:
+                        //  > Today is: 25-5-2019
 
-    }
+                }
+
+            }
      ```
 
 * Rulați codul, apare o eroare, remediați-o și rulați din nou și verificați!
