@@ -56,10 +56,10 @@
      ```
 
 * Rulați codul, apare o eroare, remediați-o și rulați din nou și verificați!
-* În program, am declarat [3 variabile de tip întreg](./README.ru.md#L37-L39):
+* În program, am declarat [3 variabile de tip întreg](./README.ro.md#L37-L39):
    1. Dați-le valori corespunzătoare datei curente
    2. Dați acestor trei variabile nume mai „expresive”, astfel încât să fie clar că aceasta este DATA PREZENTĂ (data de astăzi)
-   3. Rescrieți codul în care aceste [variabile sunt folosite pentru ieșire] (./README.ru.md#L43) astfel încât programul să le acceseze folosind noile nume pe care le-ați atribuit
+   3. Rescrieți codul în care aceste [variabile sunt folosite pentru ieșire](./README.ro.md#L43) astfel încât programul să le acceseze folosind noile nume pe care le-ați atribuit
    4. Modificați codul astfel încât să afișeze mesajul în următoarea ordine:
      ```Today is: 25-5-2019```
 
