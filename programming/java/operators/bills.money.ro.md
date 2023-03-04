@@ -47,5 +47,5 @@ money_accumulator = money_accumulator - expenses;
     * \r Caracter de întoarcere a cursorului.
     * \' Caracter apostrof.
     * \" Caracter ghilimele duble.
-    * \\\ Caracterul bară oblică inversă (\).
+    * ```\\``` Caracterul bară oblică inversă (\).
 </details>
