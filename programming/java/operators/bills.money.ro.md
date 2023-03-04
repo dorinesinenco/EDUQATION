@@ -37,6 +37,7 @@ money_accumulator = money_accumulator - expenses;
      --------
      - 45MDL
   ```
+  
 <details>
      <summary>Sfat?</summary>
 
