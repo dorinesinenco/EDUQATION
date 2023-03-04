@@ -29,14 +29,14 @@ money_accumulator = money_accumulator - expenses;
      
 * Imbunătătiti calitatea codului (respectand convențiile de denumire)
 * DE asemenea se cere afisarea pe ecran a SCHEMEI "operatiilor" calculului in urmatorul format:
-   ```
+  ```
        555MDL:
        100MDL
      + 200MDL
      + 300MDL
      --------
      - 45MDL
-   ```
+  ```
 <details>
      <summary>Sfat?</summary>
 
