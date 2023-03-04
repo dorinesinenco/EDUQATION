@@ -32,10 +32,10 @@ money_accumulator = money_accumulator - expenses;
    ```
        555MDL:
        100MDL
-     + 200 MDL
-     + 300 MDL
+     + 200MDL
+     + 300MDL
      --------
-     - 45 MDL
+     - 45MDL
    ```
 <details>
      <summary>Sfat?</summary>
