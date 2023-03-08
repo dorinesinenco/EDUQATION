@@ -9,9 +9,9 @@
   food_3_ ...  = ...
   
   ```
-  - mai adaugati cateva "item"-uri dupa acelasi principiu
+  - mai adaugati cateva "item"-uri dupa acelasi principiu (variante de mancaruri)
 
-* Sa zicem ca ar trebui sa se afle cantitatea de fiecare item comandata dupa principiul 
+* Sa zicem ca ar trebui sa se afle cantitatea de fiecare item comandata dupa principiul (indicata de la tastatura) 
   ```js
   food_1_quantity = parseInt( prompt(`How many "${food_1_name}" do you want?`) )
   ...
